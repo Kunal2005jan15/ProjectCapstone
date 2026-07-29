@@ -1,0 +1,551 @@
+OrderID,CustomerID,CustomerName,OrderDate,RestaurantType,MenuCategory,ItemName,Quantity,UnitPrice,TotalPrice,PaymentMethod,ServerName,TableNumber,DayOfWeek,TimeOfDay,SpecialRequest
+1001,C512,Christopher Lopez,2025-06-05 21:44,Delivery,Beverage,Green Smoothie,2,19.95,39.9,Mobile Payment,-,-,Thursday,Late Night,
+1002,C002,Shaun Hensley,2025-06-28 08:05,Takeaway,Food,Pasta Alfredo,2,17.38,34.76,Card,-,-,Saturday,Breakfast,Less sugar
+1003,C198,Allison Williams,2025-06-08 11:13,Delivery,Beverage,Latte,2,7.44,14.88,Cash,-,-,Sunday,Lunch,Skim milk
+1004,C360,Andrea Shields,2025-06-09 14:36,Takeaway,Food,Beef Burger,2,4.29,8.58,Mobile Payment,-,-,Monday,Lunch,Gluten-free
+1005,C752,Jenna Long,2025-06-05 14:15,Dine-In,Beverage,Latte,2,8.95,17.9,Card,Alice,19,Thursday,Lunch,No cheese
+1006,C429,Joanna Perez,2025-06-14 17:00,Dine-In,Beverage,Latte,1,4.57,4.57,Cash,Daniel,19,Saturday,Dinner,Dressing on the side
+1007,C024,Diane Hernandez,2025-06-19 22:21,Takeaway,Beverage,Green Smoothie,2,10.44,20.88,Cash,-,-,Thursday,Late Night,Gluten-free
+1008,C956,Brett Lewis,2025-06-25 09:20,Dine-In,Food,Pasta Alfredo,1,8.49,8.49,Mobile Payment,Michael,4,Wednesday,Breakfast,Extra ice
+1009,C169,James Robinson,2025-06-27 07:22,Delivery,Beverage,Cappuccino,1,15.8,15.8,Mobile Payment,-,-,Friday,Breakfast,Dressing on the side
+1010,C873,Jeanette Moreno,2025-06-20 13:30,Takeaway,Beverage,Cappuccino,2,17.14,34.28,Cash,-,-,Friday,Lunch,Extra ice
+1011,C879,Jason Barrera,2025-06-11 07:03,Dine-In,Food,Grilled Chicken,3,5.55,16.65,Card,Daniel,8,Wednesday,Breakfast,Extra ice
+1012,C237,Ralph Pittman,2025-06-24 07:33,Dine-In,Food,Pasta Alfredo,2,18.53,37.06,Mobile Payment,Robert,12,Tuesday,Breakfast,Less sugar
+1013,C060,Darlene Wallace,2025-06-04 14:06,Delivery,Food,Margherita Pizza,1,18.8,18.8,Mobile Payment,-,-,Wednesday,Lunch,No onions
+1014,C200,Bruce Bailey,2025-06-20 06:01,Takeaway,Beverage,Latte,1,7.58,7.58,Card,-,-,Friday,Breakfast,Skim milk
+1015,C674,Nicole Malone,2025-06-22 13:04,Dine-In,Beverage,Mineral Water,1,13.96,13.96,Mobile Payment,Sophia,17,Sunday,Lunch,Extra cheese
+1016,C541,Andre Scott,2025-06-11 23:12,Dine-In,Beverage,Cappuccino,2,18.74,37.48,Mobile Payment,Robert,16,Wednesday,Late Night,Gluten-free
+1017,C747,Henry Dunlap,2025-06-14 11:37,Delivery,Food,Veggie Sandwich,3,9.2,27.6,Mobile Payment,-,-,Saturday,Lunch,No cheese
+1018,C628,Cheryl Berry,2025-06-17 21:43,Dine-In,Beverage,Mineral Water,1,11.8,11.8,Cash,Daniel,14,Tuesday,Late Night,No onions
+1019,C578,Jason Collier,2025-06-02 20:34,Takeaway,Beverage,Mineral Water,2,5.39,10.78,Card,-,-,Monday,Dinner,No onions
+1020,C553,Paul Smith,2025-06-02 21:20,Dine-In,Beverage,Cappuccino,2,13.68,27.36,Cash,Robert,1,Monday,Late Night,Extra cheese
+1021,C224,George Bishop,2025-06-23 17:34,Takeaway,Beverage,Iced Tea,1,16.8,16.8,Mobile Payment,-,-,Monday,Dinner,
+1022,C534,Shannon Jones,2025-06-17 09:55,Delivery,Beverage,Cappuccino,3,3.39,10.17,Card,-,-,Tuesday,Breakfast,
+1023,C262,Richard French DDS,2025-06-07 21:48,Delivery,Food,Grilled Chicken,2,7.63,15.26,Mobile Payment,-,-,Saturday,Late Night,No onions
+1024,C715,Jamie King,2025-06-15 22:04,Delivery,Food,Margherita Pizza,3,12.74,38.22,Cash,-,-,Sunday,Late Night,Less sugar
+1025,C754,Randy Rosales,2025-06-16 06:31,Delivery,Food,Margherita Pizza,2,17.95,35.9,Cash,-,-,Monday,Breakfast,Gluten-free
+1026,C186,Valerie Fox,2025-06-20 21:14,Delivery,Beverage,Mojito,3,12.46,37.38,Mobile Payment,-,-,Friday,Late Night,No cheese
+1027,C844,Emily Hughes,2025-06-10 20:29,Dine-In,Beverage,Latte,1,15.13,15.13,Cash,Robert,13,Tuesday,Dinner,No onions
+1028,C733,Adrian Briggs,2025-06-15 18:42,Delivery,Beverage,Mineral Water,1,12.41,12.41,Card,-,-,Sunday,Dinner,Less sugar
+1029,C196,Amber Schaefer,2025-06-02 19:39,Takeaway,Beverage,Iced Tea,2,10.15,20.3,Cash,-,-,Monday,Dinner,Dressing on the side
+1030,C215,Levi Kline,2025-06-21 17:39,Delivery,Beverage,Mojito,3,14.28,42.84,Card,-,-,Saturday,Dinner,Skim milk
+1031,C305,Richard Kennedy,2025-06-01 18:00,Takeaway,Beverage,Mineral Water,2,18.04,36.08,Cash,-,-,Sunday,Dinner,No onions
+1032,C311,Andrew Herrera,2025-06-17 10:39,Delivery,Food,Pasta Alfredo,1,4.14,4.14,Card,-,-,Tuesday,Breakfast,Extra ice
+1033,C674,Robert Pugh,2025-06-12 10:44,Delivery,Food,Grilled Chicken,2,13.75,27.5,Mobile Payment,-,-,Thursday,Breakfast,Extra cheese
+1034,C460,Marie Mcfarland,2025-06-10 12:42,Dine-In,Beverage,Mineral Water,2,8.37,16.74,Mobile Payment,Alice,15,Tuesday,Lunch,Less sugar
+1035,C936,Ashley Mosley,2025-06-24 12:26,Delivery,Beverage,Fresh Orange Juice,1,10.47,10.47,Card,-,-,Tuesday,Lunch,Dressing on the side
+1036,C068,Rachel Gonzalez,2025-06-10 17:43,Takeaway,Food,Sushi Roll,3,3.56,10.68,Cash,-,-,Tuesday,Dinner,Less sugar
+1037,C888,Eric Johnson,2025-06-23 17:54,Delivery,Beverage,Latte,1,11.57,11.57,Card,-,-,Monday,Dinner,Skim milk
+1038,C089,Jason Hall,2025-06-25 10:20,Dine-In,Beverage,Latte,2,13.9,27.8,Cash,Daniel,6,Wednesday,Breakfast,Less sugar
+1039,C520,Karen Snyder,2025-06-22 11:20,Takeaway,Food,Pasta Alfredo,1,11.79,11.79,Card,-,-,Sunday,Lunch,Extra ice
+1040,C912,Nicole Brooks,2025-06-29 11:54,Delivery,Beverage,Fresh Orange Juice,1,17.12,17.12,Mobile Payment,-,-,Sunday,Lunch,No onions
+1041,C966,Tanya Russell,2025-06-16 18:49,Dine-In,Beverage,Mineral Water,3,13.13,39.39,Card,Alice,7,Monday,Dinner,No onions
+1042,C728,Debra Daniels,2025-06-08 13:03,Dine-In,Beverage,Fresh Orange Juice,2,7.27,14.54,Cash,Michael,7,Sunday,Lunch,Extra cheese
+1043,C369,Anthony Harris,2025-06-09 14:50,Dine-In,Food,Caesar Salad,3,17.39,52.17,Card,Daniel,15,Monday,Lunch,Extra cheese
+1044,C968,Courtney Stuart,2025-06-13 23:05,Delivery,Beverage,Cappuccino,1,16.76,16.76,Cash,-,-,Friday,Late Night,Gluten-free
+1045,C371,Deborah Griffin,2025-06-08 18:34,Takeaway,Beverage,Iced Tea,3,17.43,52.29,Cash,-,-,Sunday,Dinner,Skim milk
+1046,C647,Lisa Henderson,2025-06-06 23:54,Takeaway,Food,Grilled Chicken,3,5.57,16.71,Cash,-,-,Friday,Late Night,Dressing on the side
+1047,C487,Mary Green,2025-06-26 12:13,Delivery,Beverage,Cappuccino,1,8.44,8.44,Card,-,-,Thursday,Lunch,Gluten-free
+1048,C264,Nathan Clark,2025-06-20 10:31,Dine-In,Beverage,Fresh Orange Juice,2,12.37,24.74,Cash,Michael,11,Friday,Breakfast,No onions
+1049,C766,Christopher Higgins,2025-06-15 14:51,Delivery,Beverage,Mojito,3,10.43,31.29,Mobile Payment,-,-,Sunday,Lunch,Gluten-free
+1050,C333,Cameron Lowe,2025-06-18 23:55,Dine-In,Beverage,Latte,3,18.79,56.37,Card,Sophia,13,Wednesday,Late Night,No onions
+1051,C696,Daniel Palmer,2025-06-13 21:03,Dine-In,Beverage,Green Smoothie,2,10.09,20.18,Mobile Payment,Michael,5,Friday,Late Night,Skim milk
+1052,C535,Kellie Webster,2025-06-26 11:24,Delivery,Food,Sushi Roll,2,7.19,14.38,Mobile Payment,-,-,Thursday,Lunch,Gluten-free
+1053,C732,Danielle Phillips,2025-06-25 14:45,Delivery,Food,Sushi Roll,3,8.73,26.19,Card,-,-,Wednesday,Lunch,No onions
+1054,C057,Amy Williams,2025-06-29 17:14,Dine-In,Food,Margherita Pizza,2,16.86,33.72,Mobile Payment,Robert,17,Sunday,Dinner,Extra cheese
+1055,C205,Scott Villegas,2025-06-19 07:38,Takeaway,Beverage,Fresh Orange Juice,3,11.29,33.87,Cash,-,-,Thursday,Breakfast,
+1056,C030,Tami Harrell,2025-06-28 11:21,Delivery,Beverage,Fresh Orange Juice,1,13.62,13.62,Card,-,-,Saturday,Lunch,Gluten-free
+1057,C536,April Meyer,2025-06-18 18:42,Takeaway,Beverage,Green Smoothie,1,18.3,18.3,Card,-,-,Wednesday,Dinner,Dressing on the side
+1058,C462,William Gentry,2025-06-03 18:02,Delivery,Beverage,Fresh Orange Juice,3,10.28,30.84,Mobile Payment,-,-,Tuesday,Dinner,Less sugar
+1059,C032,Stacey Osborne,2025-06-11 18:21,Delivery,Beverage,Mineral Water,1,3.41,3.41,Card,-,-,Wednesday,Dinner,Gluten-free
+1060,C126,Amanda Brown,2025-06-17 23:12,Dine-In,Food,Veggie Sandwich,2,8.07,16.14,Card,Daniel,10,Tuesday,Late Night,Gluten-free
+1061,C201,Robin Williams,2025-06-11 19:46,Takeaway,Food,Grilled Chicken,2,15.37,30.74,Mobile Payment,-,-,Wednesday,Dinner,No cheese
+1062,C071,Randy Nguyen,2025-06-05 13:56,Dine-In,Beverage,Iced Tea,3,16.66,49.98,Card,Alice,18,Thursday,Lunch,Less sugar
+1063,C073,Michael Moreno,2025-06-26 22:15,Dine-In,Food,Veggie Sandwich,3,13.37,40.11,Mobile Payment,Daniel,20,Thursday,Late Night,Less sugar
+1064,C061,Pamela Adams,2025-06-13 21:58,Delivery,Beverage,Iced Tea,2,18.58,37.16,Mobile Payment,-,-,Friday,Late Night,No cheese
+1065,C265,Christina Robinson,2025-06-21 18:17,Delivery,Beverage,Mojito,2,17.63,35.26,Cash,-,-,Saturday,Dinner,Extra cheese
+1066,C415,Sheila Mcgrath,2025-06-04 13:57,Delivery,Food,Margherita Pizza,1,16.38,16.38,Cash,-,-,Wednesday,Lunch,
+1067,C657,Joshua Good,2025-06-28 23:08,Dine-In,Beverage,Iced Tea,1,18.37,18.37,Card,Alice,12,Saturday,Late Night,Dressing on the side
+1068,C732,Kelsey Peterson,2025-06-23 23:08,Delivery,Beverage,Cappuccino,1,9.95,9.95,Card,-,-,Monday,Late Night,
+1069,C409,William Kelly,2025-06-02 07:45,Delivery,Beverage,Cappuccino,1,16.17,16.17,Cash,-,-,Monday,Breakfast,No onions
+1070,C834,Jason Robinson,2025-06-20 17:46,Dine-In,Beverage,Latte,2,6.53,13.06,Cash,Michael,16,Friday,Dinner,No onions
+1071,C110,Tonya Munoz,2025-06-20 08:27,Delivery,Food,Caesar Salad,3,7.83,23.49,Cash,-,-,Friday,Breakfast,Less sugar
+1072,C147,Kimberly Ford DDS,2025-06-11 23:39,Delivery,Beverage,Fresh Orange Juice,1,19.52,19.52,Mobile Payment,-,-,Wednesday,Late Night,No cheese
+1073,C763,Sally Espinoza,2025-06-21 08:17,Delivery,Food,Caesar Salad,2,11.32,22.64,Mobile Payment,-,-,Saturday,Breakfast,No cheese
+1074,C857,Heather Harding,2025-06-23 18:06,Takeaway,Food,Beef Burger,2,7.76,15.52,Card,-,-,Monday,Dinner,Less sugar
+1075,C962,Catherine Davis,2025-06-26 12:57,Delivery,Beverage,Green Smoothie,2,16.92,33.84,Card,-,-,Thursday,Lunch,Extra ice
+1076,C476,Holly Johnson,2025-06-28 14:49,Takeaway,Beverage,Mineral Water,1,16.04,16.04,Card,-,-,Saturday,Lunch,
+1077,C516,Christopher Summers,2025-06-20 12:46,Takeaway,Food,Sushi Roll,3,4.64,13.92,Cash,-,-,Friday,Lunch,Extra ice
+1078,C139,Stacie Dominguez,2025-06-17 23:47,Dine-In,Food,Sushi Roll,3,12.86,38.58,Card,Robert,1,Tuesday,Late Night,No cheese
+1079,C077,Robin Patton,2025-06-23 12:45,Dine-In,Beverage,Fresh Orange Juice,2,17.17,34.34,Mobile Payment,Sophia,3,Monday,Lunch,
+1080,C461,Christopher Gregory,2025-06-09 14:41,Delivery,Beverage,Latte,1,12.39,12.39,Mobile Payment,-,-,Monday,Lunch,No cheese
+1081,C779,Tracy Young,2025-06-20 19:01,Takeaway,Beverage,Mojito,2,8.49,16.98,Card,-,-,Friday,Dinner,No onions
+1082,C118,Joshua Ross,2025-06-05 17:08,Delivery,Beverage,Mineral Water,1,3.48,3.48,Cash,-,-,Thursday,Dinner,Less sugar
+1083,C864,Sharon Mcclure,2025-06-27 20:58,Delivery,Beverage,Iced Tea,2,12.67,25.34,Cash,-,-,Friday,Dinner,Gluten-free
+1084,C725,Julie Gregory,2025-06-23 10:06,Delivery,Food,Veggie Sandwich,3,19.4,58.2,Card,-,-,Monday,Breakfast,
+1085,C087,Karen Bryan,2025-06-08 19:58,Delivery,Beverage,Latte,1,10.81,10.81,Cash,-,-,Sunday,Dinner,
+1086,C936,Danielle Campbell,2025-06-05 07:45,Takeaway,Beverage,Mojito,1,5.07,5.07,Mobile Payment,-,-,Thursday,Breakfast,Dressing on the side
+1087,C970,Kimberly Ayala,2025-06-12 21:51,Takeaway,Beverage,Latte,1,15.54,15.54,Card,-,-,Thursday,Late Night,Gluten-free
+1088,C948,Alejandro Powers,2025-06-10 22:30,Dine-In,Beverage,Iced Tea,3,13.54,40.62,Cash,Robert,5,Tuesday,Late Night,No cheese
+1089,C203,Veronica Henry,2025-06-11 10:52,Delivery,Food,Veggie Sandwich,2,9.71,19.42,Cash,-,-,Wednesday,Breakfast,Dressing on the side
+1090,C812,Sabrina Daniels,2025-06-08 14:11,Delivery,Beverage,Iced Tea,3,15.02,45.06,Mobile Payment,-,-,Sunday,Lunch,Less sugar
+1091,C539,David Sanchez,2025-06-07 21:49,Delivery,Food,Beef Burger,1,7.43,7.43,Card,-,-,Saturday,Late Night,Extra cheese
+1092,C009,Kevin Donovan,2025-06-05 22:10,Dine-In,Beverage,Fresh Orange Juice,2,13.58,27.16,Cash,Daniel,11,Thursday,Late Night,Gluten-free
+1093,C273,Jeremy Mcintyre,2025-06-26 10:07,Delivery,Food,Margherita Pizza,2,7.55,15.1,Card,-,-,Thursday,Breakfast,Extra ice
+1094,C383,Mark Zimmerman,2025-06-09 23:00,Delivery,Food,Caesar Salad,1,12.4,12.4,Cash,-,-,Monday,Late Night,Skim milk
+1095,C984,Lisa Padilla,2025-06-24 14:48,Takeaway,Food,Beef Burger,3,4.06,12.18,Mobile Payment,-,-,Tuesday,Lunch,No cheese
+1096,C997,Joanna Davis,2025-06-06 11:47,Dine-In,Beverage,Latte,3,8.61,25.83,Mobile Payment,Alice,15,Friday,Lunch,No onions
+1097,C898,Daniel Grant,2025-06-22 23:11,Dine-In,Beverage,Latte,1,16.14,16.14,Card,Alice,5,Sunday,Late Night,Dressing on the side
+1098,C146,Maureen Bean,2025-06-25 14:27,Takeaway,Food,Sushi Roll,2,18.82,37.64,Card,-,-,Wednesday,Lunch,No cheese
+1099,C493,Tamara Stafford,2025-06-24 14:58,Dine-In,Beverage,Mineral Water,2,13.18,26.36,Card,Alice,17,Tuesday,Lunch,Less sugar
+1100,C887,Danielle Nelson,2025-06-28 06:18,Dine-In,Beverage,Iced Tea,2,17.18,34.36,Cash,Alice,15,Saturday,Breakfast,Gluten-free
+1101,C040,Tony Clayton,2025-06-04 11:51,Dine-In,Food,Margherita Pizza,3,9.33,27.99,Mobile Payment,Michael,6,Wednesday,Lunch,
+1102,C965,Lori Walker,2025-06-30 18:40,Takeaway,Beverage,Mineral Water,2,12.02,24.04,Cash,-,-,Monday,Dinner,Extra ice
+1103,C374,Angela Schwartz,2025-06-10 08:35,Delivery,Beverage,Iced Tea,2,11.52,23.04,Card,-,-,Tuesday,Breakfast,
+1104,C117,Katie Leonard,2025-06-28 11:04,Dine-In,Beverage,Mojito,1,14.14,14.14,Mobile Payment,Sophia,10,Saturday,Lunch,Extra ice
+1105,C332,Ricky Adams,2025-06-28 21:55,Takeaway,Food,Sushi Roll,3,7.46,22.38,Cash,-,-,Saturday,Late Night,Dressing on the side
+1106,C999,Mr. Nicholas Freeman,2025-06-20 07:56,Dine-In,Food,Margherita Pizza,3,10.57,31.71,Mobile Payment,Alice,19,Friday,Breakfast,No onions
+1107,C127,Daniel Watson,2025-06-02 11:26,Dine-In,Food,Margherita Pizza,3,9.09,27.27,Card,Michael,2,Monday,Lunch,No cheese
+1108,C876,Valerie Shepherd,2025-06-21 17:17,Delivery,Beverage,Cappuccino,3,8.31,24.93,Cash,-,-,Saturday,Dinner,Dressing on the side
+1109,C830,Mrs. Heather Thomas,2025-06-12 20:08,Takeaway,Food,Veggie Sandwich,3,4.66,13.98,Mobile Payment,-,-,Thursday,Dinner,Extra ice
+1110,C808,Brian Rojas,2025-06-02 11:45,Takeaway,Food,Margherita Pizza,3,13.39,40.17,Mobile Payment,-,-,Monday,Lunch,Skim milk
+1111,C700,Malik Taylor,2025-06-15 23:04,Takeaway,Food,Caesar Salad,1,18.29,18.29,Cash,-,-,Sunday,Late Night,Dressing on the side
+1112,C342,Rhonda Middleton,2025-06-06 19:15,Dine-In,Food,Caesar Salad,3,8.8,26.4,Cash,Alice,13,Friday,Dinner,Dressing on the side
+1113,C880,Cynthia Barrett,2025-06-30 13:57,Delivery,Food,Margherita Pizza,3,4.98,14.94,Cash,-,-,Monday,Lunch,No onions
+1114,C585,Clinton Hernandez,2025-06-22 06:19,Delivery,Beverage,Latte,3,4.35,13.05,Card,-,-,Sunday,Breakfast,Gluten-free
+1115,C286,Jessica Stephens,2025-06-18 20:02,Delivery,Beverage,Latte,3,16.09,48.27,Cash,-,-,Wednesday,Dinner,Extra ice
+1116,C208,Stephanie Fox,2025-06-06 09:49,Takeaway,Food,Pasta Alfredo,3,14.9,44.7,Card,-,-,Friday,Breakfast,Extra ice
+1117,C021,Robert Cox,2025-06-20 12:36,Delivery,Food,Sushi Roll,1,19.82,19.82,Card,-,-,Friday,Lunch,No onions
+1118,C277,Roger Cummings,2025-06-06 21:12,Dine-In,Beverage,Iced Tea,2,15.81,31.62,Mobile Payment,Sophia,7,Friday,Late Night,Extra cheese
+1119,C654,Patrick Barrett,2025-06-10 09:47,Dine-In,Food,Sushi Roll,3,9.01,27.03,Mobile Payment,Daniel,20,Tuesday,Breakfast,Gluten-free
+1120,C660,Gregory Rogers,2025-06-10 23:20,Dine-In,Beverage,Cappuccino,3,12.04,36.12,Card,Robert,7,Tuesday,Late Night,Gluten-free
+1121,C540,Jeanne Patterson,2025-06-02 10:38,Dine-In,Food,Margherita Pizza,2,5.85,11.7,Mobile Payment,Alice,1,Monday,Breakfast,Extra ice
+1122,C120,Samuel Beck,2025-06-12 19:18,Delivery,Food,Margherita Pizza,2,13.78,27.56,Mobile Payment,-,-,Thursday,Dinner,Extra ice
+1123,C702,Raven Neal,2025-06-12 10:27,Delivery,Beverage,Mineral Water,1,17.74,17.74,Card,-,-,Thursday,Breakfast,
+1124,C904,Robert Young,2025-06-11 07:50,Delivery,Food,Margherita Pizza,3,14.3,42.9,Cash,-,-,Wednesday,Breakfast,Extra ice
+1125,C587,Andrew Johnson,2025-06-02 22:24,Delivery,Food,Sushi Roll,1,17.14,17.14,Mobile Payment,-,-,Monday,Late Night,Gluten-free
+1126,C895,Valerie Jordan,2025-06-25 11:53,Delivery,Food,Caesar Salad,2,10.41,20.82,Mobile Payment,-,-,Wednesday,Lunch,
+1127,C839,Jennifer Andrade,2025-06-11 17:37,Takeaway,Food,Veggie Sandwich,2,9.57,19.14,Card,-,-,Wednesday,Dinner,
+1128,C677,Kathryn Garcia,2025-06-28 18:22,Takeaway,Beverage,Latte,2,8.89,17.78,Mobile Payment,-,-,Saturday,Dinner,
+1129,C432,Julie Smith,2025-06-19 17:21,Dine-In,Food,Beef Burger,3,9.29,27.87,Cash,Robert,20,Thursday,Dinner,Gluten-free
+1130,C747,Michael Peterson,2025-06-30 21:00,Delivery,Beverage,Fresh Orange Juice,2,16.8,33.6,Cash,-,-,Monday,Late Night,No cheese
+1131,C060,Tiffany Booth,2025-06-04 21:32,Delivery,Beverage,Iced Tea,2,16.16,32.32,Mobile Payment,-,-,Wednesday,Late Night,No cheese
+1132,C114,Douglas Wiggins,2025-06-19 11:59,Dine-In,Food,Grilled Chicken,2,6.79,13.58,Card,Daniel,5,Thursday,Lunch,
+1133,C853,Kathy French,2025-06-17 19:01,Takeaway,Beverage,Iced Tea,2,17.66,35.32,Card,-,-,Tuesday,Dinner,No cheese
+1134,C224,Mark Jones,2025-06-05 08:58,Dine-In,Food,Beef Burger,3,10.57,31.71,Cash,Robert,10,Thursday,Breakfast,Gluten-free
+1135,C028,Isabella Barber,2025-06-25 22:10,Delivery,Food,Veggie Sandwich,1,14.13,14.13,Card,-,-,Wednesday,Late Night,Skim milk
+1136,C881,Amanda Dunn,2025-06-05 14:46,Delivery,Food,Pasta Alfredo,1,13.25,13.25,Card,-,-,Thursday,Lunch,Extra cheese
+1137,C743,Thomas Flores,2025-06-19 14:07,Dine-In,Food,Margherita Pizza,1,18.74,18.74,Mobile Payment,Daniel,3,Thursday,Lunch,Dressing on the side
+1138,C668,Ellen Le,2025-06-25 21:51,Takeaway,Beverage,Iced Tea,3,10.42,31.26,Mobile Payment,-,-,Wednesday,Late Night,Extra ice
+1139,C235,Melissa Lucas,2025-06-08 22:38,Delivery,Food,Caesar Salad,1,19.32,19.32,Cash,-,-,Sunday,Late Night,No onions
+1140,C008,Ann Gray,2025-06-01 07:13,Delivery,Food,Margherita Pizza,1,12.33,12.33,Mobile Payment,-,-,Sunday,Breakfast,
+1141,C607,Beth Rodriguez,2025-06-21 11:22,Delivery,Beverage,Green Smoothie,2,15.5,31.0,Mobile Payment,-,-,Saturday,Lunch,No cheese
+1142,C607,Susan Barr,2025-06-04 21:28,Takeaway,Beverage,Cappuccino,2,4.4,8.8,Cash,-,-,Wednesday,Late Night,Dressing on the side
+1143,C978,Martin Alvarado,2025-06-04 22:52,Dine-In,Beverage,Cappuccino,1,6.46,6.46,Card,Sophia,8,Wednesday,Late Night,Less sugar
+1144,C029,Karen Walker,2025-06-10 14:49,Dine-In,Food,Veggie Sandwich,3,19.38,58.14,Card,Sophia,15,Tuesday,Lunch,
+1145,C662,Mark Gutierrez,2025-06-07 22:10,Takeaway,Beverage,Fresh Orange Juice,2,7.03,14.06,Card,-,-,Saturday,Late Night,Less sugar
+1146,C089,Gregory Ray,2025-06-28 18:15,Takeaway,Beverage,Green Smoothie,3,8.41,25.23,Mobile Payment,-,-,Saturday,Dinner,No onions
+1147,C223,Mike Wright,2025-06-03 14:21,Dine-In,Beverage,Cappuccino,3,16.65,49.95,Mobile Payment,Robert,11,Tuesday,Lunch,No cheese
+1148,C106,Brian Kelly,2025-06-20 07:07,Takeaway,Food,Veggie Sandwich,1,14.91,14.91,Mobile Payment,-,-,Friday,Breakfast,
+1149,C138,Emily Miller,2025-06-11 06:59,Takeaway,Food,Veggie Sandwich,2,4.85,9.7,Card,-,-,Wednesday,Breakfast,Dressing on the side
+1150,C485,Joshua Hamilton,2025-06-26 18:14,Takeaway,Beverage,Iced Tea,1,12.61,12.61,Card,-,-,Thursday,Dinner,No cheese
+1151,C812,Marilyn Smith,2025-06-17 20:58,Dine-In,Food,Sushi Roll,1,15.62,15.62,Card,Alice,18,Tuesday,Dinner,Extra ice
+1152,C979,Robert Ellis,2025-06-02 22:08,Takeaway,Food,Grilled Chicken,3,19.41,58.23,Card,-,-,Monday,Late Night,Extra ice
+1153,C904,John Weber,2025-06-01 06:57,Takeaway,Beverage,Latte,3,11.27,33.81,Mobile Payment,-,-,Sunday,Breakfast,Extra cheese
+1154,C185,Richard Gilbert,2025-06-30 21:57,Dine-In,Beverage,Iced Tea,3,12.45,37.35,Cash,Robert,4,Monday,Late Night,No onions
+1155,C862,Ms. Jordan Walter DVM,2025-06-05 18:50,Delivery,Food,Sushi Roll,1,13.95,13.95,Card,-,-,Thursday,Dinner,Extra cheese
+1156,C418,Alexis Rodriguez,2025-06-15 09:20,Dine-In,Beverage,Latte,2,18.9,37.8,Card,Sophia,12,Sunday,Breakfast,Extra ice
+1157,C852,Brian Hubbard,2025-06-11 17:34,Delivery,Food,Beef Burger,1,3.3,3.3,Card,-,-,Wednesday,Dinner,Dressing on the side
+1158,C077,Brittney Allen,2025-06-15 13:22,Delivery,Food,Sushi Roll,3,13.03,39.09,Cash,-,-,Sunday,Lunch,Gluten-free
+1159,C871,Rachael Krueger,2025-06-14 06:15,Takeaway,Food,Sushi Roll,2,16.11,32.22,Cash,-,-,Saturday,Breakfast,Skim milk
+1160,C421,Kenneth Allen,2025-06-18 06:39,Dine-In,Food,Caesar Salad,3,15.45,46.35,Cash,Michael,4,Wednesday,Breakfast,Gluten-free
+1161,C837,Angelica Dunlap,2025-06-04 11:29,Takeaway,Beverage,Mojito,1,15.77,15.77,Cash,-,-,Wednesday,Lunch,Less sugar
+1162,C331,Robin Phillips,2025-06-17 08:16,Takeaway,Food,Margherita Pizza,2,19.03,38.06,Cash,-,-,Tuesday,Breakfast,Extra cheese
+1163,C959,James Mendoza,2025-06-24 23:17,Delivery,Beverage,Latte,1,3.71,3.71,Mobile Payment,-,-,Tuesday,Late Night,No cheese
+1164,C840,Stephanie Smith,2025-06-05 06:46,Takeaway,Beverage,Mojito,2,14.37,28.74,Card,-,-,Thursday,Breakfast,Dressing on the side
+1165,C367,Lindsey Parker,2025-06-06 17:09,Delivery,Food,Veggie Sandwich,3,11.99,35.97,Mobile Payment,-,-,Friday,Dinner,Skim milk
+1166,C380,Sharon Le,2025-06-03 22:55,Takeaway,Food,Pasta Alfredo,1,8.45,8.45,Mobile Payment,-,-,Tuesday,Late Night,Extra cheese
+1167,C349,Julie Ramsey,2025-06-08 21:44,Dine-In,Food,Pasta Alfredo,1,13.81,13.81,Card,Sophia,11,Sunday,Late Night,No cheese
+1168,C215,Ashley Simpson,2025-06-02 20:56,Takeaway,Food,Grilled Chicken,1,12.25,12.25,Mobile Payment,-,-,Monday,Dinner,
+1169,C979,Derek Martinez,2025-06-12 10:28,Dine-In,Food,Grilled Chicken,2,6.13,12.26,Cash,Robert,19,Thursday,Breakfast,Dressing on the side
+1170,C025,Deanna Moore,2025-06-02 19:12,Delivery,Food,Grilled Chicken,1,15.42,15.42,Cash,-,-,Monday,Dinner,
+1171,C859,Anthony Anderson,2025-06-23 13:45,Dine-In,Beverage,Fresh Orange Juice,1,12.17,12.17,Mobile Payment,Michael,12,Monday,Lunch,Dressing on the side
+1172,C269,Brian Taylor,2025-06-26 06:39,Takeaway,Food,Margherita Pizza,2,12.08,24.16,Card,-,-,Thursday,Breakfast,Dressing on the side
+1173,C502,Angela Saunders,2025-06-20 14:34,Dine-In,Food,Grilled Chicken,3,5.55,16.65,Mobile Payment,Sophia,18,Friday,Lunch,Dressing on the side
+1174,C500,Vincent Day,2025-06-06 13:39,Dine-In,Beverage,Cappuccino,1,6.94,6.94,Card,Robert,13,Friday,Lunch,No onions
+1175,C489,Jessica Adams,2025-06-06 18:11,Delivery,Food,Pasta Alfredo,1,15.71,15.71,Card,-,-,Friday,Dinner,No cheese
+1176,C515,Jorge Jones,2025-06-25 10:53,Delivery,Food,Veggie Sandwich,2,5.21,10.42,Card,-,-,Wednesday,Breakfast,Skim milk
+1177,C300,Eric Brown,2025-06-10 11:27,Takeaway,Food,Caesar Salad,1,17.78,17.78,Cash,-,-,Tuesday,Lunch,Extra ice
+1178,C782,Rebecca Franklin,2025-06-14 22:03,Delivery,Food,Caesar Salad,3,7.75,23.25,Cash,-,-,Saturday,Late Night,Extra ice
+1179,C485,Dr. Jesus Mason MD,2025-06-07 22:23,Dine-In,Food,Sushi Roll,1,3.81,3.81,Card,Alice,3,Saturday,Late Night,No cheese
+1180,C604,Timothy Martinez,2025-06-06 13:44,Takeaway,Food,Beef Burger,2,19.39,38.78,Cash,-,-,Friday,Lunch,Dressing on the side
+1181,C119,David Taylor,2025-06-03 11:45,Takeaway,Food,Margherita Pizza,3,18.58,55.74,Mobile Payment,-,-,Tuesday,Lunch,Dressing on the side
+1182,C722,Lisa Ross,2025-06-06 11:10,Takeaway,Beverage,Mojito,1,15.75,15.75,Card,-,-,Friday,Lunch,
+1183,C227,David Brown,2025-06-25 18:22,Dine-In,Food,Sushi Roll,3,4.22,12.66,Card,Alice,17,Wednesday,Dinner,Extra cheese
+1184,C480,Lawrence Stewart,2025-06-10 13:17,Takeaway,Food,Beef Burger,3,6.34,19.02,Card,-,-,Tuesday,Lunch,Extra cheese
+1185,C994,Vicki Bryant,2025-06-18 11:17,Delivery,Food,Veggie Sandwich,1,4.01,4.01,Cash,-,-,Wednesday,Lunch,No onions
+1186,C316,Richard Mathis,2025-06-07 18:09,Dine-In,Beverage,Mojito,1,16.64,16.64,Mobile Payment,Daniel,7,Saturday,Dinner,Gluten-free
+1187,C648,William Freeman,2025-06-20 11:18,Dine-In,Food,Beef Burger,3,19.93,59.79,Cash,Michael,12,Friday,Lunch,No onions
+1188,C530,George Garrett,2025-06-02 06:22,Takeaway,Food,Beef Burger,1,4.93,4.93,Mobile Payment,-,-,Monday,Breakfast,No cheese
+1189,C778,David Day,2025-06-15 06:40,Takeaway,Food,Sushi Roll,3,18.95,56.85,Mobile Payment,-,-,Sunday,Breakfast,Gluten-free
+1190,C428,Riley Mclaughlin,2025-06-19 18:58,Dine-In,Beverage,Mineral Water,2,9.82,19.64,Mobile Payment,Robert,7,Thursday,Dinner,
+1191,C900,Allison Byrd,2025-06-09 22:01,Delivery,Food,Veggie Sandwich,1,19.87,19.87,Cash,-,-,Monday,Late Night,Extra cheese
+1192,C198,Robin Adams,2025-06-27 14:28,Takeaway,Food,Margherita Pizza,1,11.16,11.16,Card,-,-,Friday,Lunch,Extra ice
+1193,C499,Lisa Sampson,2025-06-18 10:30,Delivery,Beverage,Fresh Orange Juice,3,16.95,50.85,Cash,-,-,Wednesday,Breakfast,Extra cheese
+1194,C975,Sharon Young,2025-06-23 10:01,Takeaway,Food,Grilled Chicken,1,3.33,3.33,Cash,-,-,Monday,Breakfast,Gluten-free
+1195,C176,Stanley Romero,2025-06-03 18:50,Delivery,Food,Caesar Salad,2,16.35,32.7,Card,-,-,Tuesday,Dinner,No onions
+1196,C921,Daniel Thornton,2025-06-06 21:26,Delivery,Food,Beef Burger,1,13.99,13.99,Mobile Payment,-,-,Friday,Late Night,No cheese
+1197,C164,Faith Whitaker,2025-06-22 17:32,Delivery,Food,Caesar Salad,1,8.42,8.42,Card,-,-,Sunday,Dinner,Gluten-free
+1198,C036,Joseph Tran,2025-06-24 11:39,Dine-In,Beverage,Mineral Water,1,17.28,17.28,Mobile Payment,Sophia,11,Tuesday,Lunch,Extra ice
+1199,C745,Nathan Reed,2025-06-12 18:30,Delivery,Beverage,Iced Tea,3,5.61,16.83,Mobile Payment,-,-,Thursday,Dinner,No onions
+1200,C641,Bryan Wilson,2025-06-10 21:14,Takeaway,Beverage,Mojito,3,3.89,11.67,Mobile Payment,-,-,Tuesday,Late Night,
+1201,C714,Anthony Mason,2025-06-11 10:06,Delivery,Food,Grilled Chicken,1,15.3,15.3,Card,-,-,Wednesday,Breakfast,
+1202,C264,Ryan Bond,2025-06-25 07:12,Dine-In,Beverage,Mojito,1,4.15,4.15,Mobile Payment,Michael,1,Wednesday,Breakfast,No cheese
+1203,C299,Diana Gonzalez,2025-06-05 13:40,Delivery,Food,Veggie Sandwich,1,9.87,9.87,Card,-,-,Thursday,Lunch,
+1204,C905,Valerie Watts,2025-06-28 18:01,Delivery,Beverage,Mineral Water,3,6.55,19.65,Cash,-,-,Saturday,Dinner,Extra cheese
+1205,C076,Jodi Russell,2025-06-21 18:24,Delivery,Beverage,Fresh Orange Juice,3,13.94,41.82,Mobile Payment,-,-,Saturday,Dinner,
+1206,C469,Rachel French,2025-06-10 13:00,Delivery,Beverage,Cappuccino,1,14.85,14.85,Card,-,-,Tuesday,Lunch,Extra cheese
+1207,C285,Brian Diaz,2025-06-08 12:05,Takeaway,Food,Pasta Alfredo,1,4.17,4.17,Mobile Payment,-,-,Sunday,Lunch,Extra ice
+1208,C446,Anthony Rodriguez,2025-06-27 06:59,Dine-In,Food,Sushi Roll,1,4.58,4.58,Card,Alice,12,Friday,Breakfast,Extra cheese
+1209,C224,Tyler Hart,2025-06-20 10:30,Takeaway,Beverage,Cappuccino,3,19.07,57.21,Card,-,-,Friday,Breakfast,No cheese
+1210,C208,James Walters,2025-06-23 07:47,Takeaway,Food,Beef Burger,2,19.88,39.76,Card,-,-,Monday,Breakfast,Skim milk
+1211,C868,Mason Brown,2025-06-27 18:07,Dine-In,Beverage,Cappuccino,1,6.77,6.77,Mobile Payment,Michael,5,Friday,Dinner,Extra cheese
+1212,C307,Debbie Weaver,2025-06-08 09:56,Dine-In,Food,Sushi Roll,3,15.33,45.99,Mobile Payment,Alice,19,Sunday,Breakfast,
+1213,C060,Meagan Jenkins,2025-06-18 23:36,Delivery,Food,Grilled Chicken,1,4.69,4.69,Mobile Payment,-,-,Wednesday,Late Night,Extra cheese
+1214,C750,Jessica Morrow,2025-06-06 20:32,Dine-In,Beverage,Mineral Water,1,3.56,3.56,Cash,Robert,10,Friday,Dinner,Skim milk
+1215,C802,Nichole King,2025-06-21 19:40,Dine-In,Food,Pasta Alfredo,1,12.09,12.09,Card,Daniel,14,Saturday,Dinner,No onions
+1216,C699,Michelle Hill,2025-06-19 21:21,Dine-In,Beverage,Iced Tea,3,6.07,18.21,Cash,Michael,7,Thursday,Late Night,
+1217,C734,Stephanie Carter,2025-06-13 23:13,Dine-In,Beverage,Mojito,2,16.37,32.74,Cash,Michael,10,Friday,Late Night,No cheese
+1218,C312,Zachary Sanders,2025-06-17 18:10,Delivery,Beverage,Green Smoothie,1,13.21,13.21,Mobile Payment,-,-,Tuesday,Dinner,No cheese
+1219,C643,Adam Robinson,2025-06-15 08:43,Takeaway,Food,Caesar Salad,3,12.88,38.64,Cash,-,-,Sunday,Breakfast,
+1220,C727,William Lewis,2025-06-07 23:08,Dine-In,Beverage,Mineral Water,1,15.73,15.73,Card,Sophia,6,Saturday,Late Night,No cheese
+1221,C366,Thomas Gonzales,2025-06-27 06:16,Takeaway,Beverage,Cappuccino,2,10.98,21.96,Cash,-,-,Friday,Breakfast,No onions
+1222,C187,Deanna Mendoza,2025-06-02 17:43,Dine-In,Beverage,Cappuccino,2,19.33,38.66,Cash,Michael,3,Monday,Dinner,Extra cheese
+1223,C749,Dustin Fernandez,2025-06-26 13:27,Delivery,Beverage,Latte,2,14.89,29.78,Cash,-,-,Thursday,Lunch,
+1224,C118,Sabrina Obrien,2025-06-05 17:24,Takeaway,Beverage,Latte,2,4.64,9.28,Cash,-,-,Thursday,Dinner,Less sugar
+1225,C639,Tracy Gill,2025-06-20 07:45,Takeaway,Beverage,Fresh Orange Juice,3,8.34,25.02,Cash,-,-,Friday,Breakfast,Skim milk
+1226,C845,Yolanda Carr,2025-06-29 13:41,Takeaway,Beverage,Iced Tea,2,11.35,22.7,Card,-,-,Sunday,Lunch,No onions
+1227,C477,Kayla Andrade,2025-06-16 21:30,Delivery,Food,Grilled Chicken,2,17.76,35.52,Card,-,-,Monday,Late Night,Dressing on the side
+1228,C502,Zachary Johnson,2025-06-11 22:28,Dine-In,Beverage,Green Smoothie,1,4.99,4.99,Card,Daniel,9,Wednesday,Late Night,No cheese
+1229,C383,James Mitchell,2025-06-10 12:33,Takeaway,Beverage,Mojito,2,19.22,38.44,Cash,-,-,Tuesday,Lunch,Less sugar
+1230,C078,Kendra Ellis,2025-06-06 17:14,Dine-In,Beverage,Latte,2,17.34,34.68,Cash,Daniel,14,Friday,Dinner,Extra cheese
+1231,C478,Briana Bowman,2025-06-17 21:03,Dine-In,Beverage,Latte,2,16.97,33.94,Cash,Sophia,6,Tuesday,Late Night,Less sugar
+1232,C787,Dr. Megan Brown,2025-06-27 14:47,Takeaway,Food,Caesar Salad,3,19.77,59.31,Cash,-,-,Friday,Lunch,Less sugar
+1233,C750,Ethan Fox PhD,2025-06-11 06:52,Delivery,Food,Beef Burger,2,8.14,16.28,Cash,-,-,Wednesday,Breakfast,Less sugar
+1234,C319,William Paul,2025-06-02 17:26,Takeaway,Beverage,Green Smoothie,3,7.54,22.62,Card,-,-,Monday,Dinner,Skim milk
+1235,C233,Joseph Allen,2025-06-23 14:22,Delivery,Beverage,Green Smoothie,3,4.22,12.66,Card,-,-,Monday,Lunch,Less sugar
+1236,C781,Terri Stokes,2025-06-02 13:38,Takeaway,Beverage,Cappuccino,2,12.28,24.56,Card,-,-,Monday,Lunch,Extra cheese
+1237,C222,Stephanie Le,2025-06-21 12:03,Delivery,Beverage,Green Smoothie,2,3.91,7.82,Card,-,-,Saturday,Lunch,Extra cheese
+1238,C252,Madeline Huffman,2025-06-03 13:58,Takeaway,Beverage,Cappuccino,1,9.14,9.14,Cash,-,-,Tuesday,Lunch,Extra cheese
+1239,C505,Mary Tate,2025-06-21 13:54,Dine-In,Food,Veggie Sandwich,2,18.04,36.08,Mobile Payment,Daniel,1,Saturday,Lunch,Gluten-free
+1240,C524,Nicholas Ramirez,2025-06-13 11:06,Delivery,Food,Beef Burger,2,7.4,14.8,Card,-,-,Friday,Lunch,Extra cheese
+1241,C833,Amber Carter,2025-06-06 18:01,Takeaway,Food,Sushi Roll,3,4.65,13.95,Mobile Payment,-,-,Friday,Dinner,Less sugar
+1242,C332,Preston Brandt,2025-06-28 12:52,Takeaway,Food,Beef Burger,2,9.19,18.38,Cash,-,-,Saturday,Lunch,No cheese
+1243,C839,Michael Jordan,2025-06-08 18:29,Takeaway,Beverage,Green Smoothie,2,19.13,38.26,Card,-,-,Sunday,Dinner,Dressing on the side
+1244,C067,Carrie Stephenson,2025-06-11 23:02,Takeaway,Beverage,Latte,2,4.06,8.12,Mobile Payment,-,-,Wednesday,Late Night,Dressing on the side
+1245,C694,Rachel Edwards,2025-06-21 17:08,Dine-In,Beverage,Green Smoothie,2,3.73,7.46,Card,Robert,15,Saturday,Dinner,Skim milk
+1246,C494,Michael Edwards,2025-06-06 23:50,Delivery,Beverage,Cappuccino,1,12.6,12.6,Card,-,-,Friday,Late Night,No cheese
+1247,C964,Mr. William Rogers,2025-06-30 21:42,Dine-In,Food,Beef Burger,1,9.46,9.46,Cash,Daniel,4,Monday,Late Night,Gluten-free
+1248,C051,Daniel Lamb,2025-06-18 21:11,Takeaway,Food,Pasta Alfredo,3,12.82,38.46,Cash,-,-,Wednesday,Late Night,Gluten-free
+1249,C472,Mary Woods,2025-06-01 06:55,Takeaway,Beverage,Green Smoothie,2,6.27,12.54,Cash,-,-,Sunday,Breakfast,Skim milk
+1250,C669,Stephanie Hernandez,2025-06-13 21:11,Dine-In,Beverage,Latte,2,13.8,27.6,Mobile Payment,Sophia,18,Friday,Late Night,Extra ice
+1251,C967,Joanna Curry,2025-06-10 10:36,Dine-In,Food,Caesar Salad,2,10.74,21.48,Cash,Michael,19,Tuesday,Breakfast,Extra ice
+1252,C154,Lauren Hall,2025-06-07 20:42,Dine-In,Food,Margherita Pizza,2,19.24,38.48,Cash,Alice,12,Saturday,Dinner,Less sugar
+1253,C517,Jesse Taylor,2025-06-17 23:08,Dine-In,Beverage,Fresh Orange Juice,2,4.08,8.16,Mobile Payment,Sophia,8,Tuesday,Late Night,No cheese
+1254,C942,Robert Weber,2025-06-07 18:42,Takeaway,Beverage,Iced Tea,3,17.07,51.21,Cash,-,-,Saturday,Dinner,Extra cheese
+1255,C564,Jamie Parsons,2025-06-15 06:29,Dine-In,Food,Sushi Roll,1,13.2,13.2,Mobile Payment,Sophia,5,Sunday,Breakfast,Dressing on the side
+1256,C567,Madison Johnson,2025-06-02 21:08,Delivery,Beverage,Green Smoothie,1,11.89,11.89,Mobile Payment,-,-,Monday,Late Night,Skim milk
+1257,C396,Carolyn Henderson,2025-06-10 23:34,Delivery,Food,Beef Burger,1,5.8,5.8,Mobile Payment,-,-,Tuesday,Late Night,No cheese
+1258,C830,William Smith,2025-06-02 07:41,Delivery,Beverage,Mojito,1,15.65,15.65,Cash,-,-,Monday,Breakfast,Gluten-free
+1259,C929,John Allison,2025-06-26 08:54,Takeaway,Beverage,Cappuccino,1,16.79,16.79,Mobile Payment,-,-,Thursday,Breakfast,Extra cheese
+1260,C477,Heather Nguyen,2025-06-13 07:57,Takeaway,Beverage,Mineral Water,3,4.91,14.73,Card,-,-,Friday,Breakfast,No cheese
+1261,C622,Dana Fischer,2025-06-23 20:20,Delivery,Beverage,Mojito,1,11.63,11.63,Mobile Payment,-,-,Monday,Dinner,Gluten-free
+1262,C458,Tonya Gibson,2025-06-01 23:23,Dine-In,Beverage,Fresh Orange Juice,1,5.36,5.36,Card,Sophia,3,Sunday,Late Night,Extra cheese
+1263,C413,Keith Espinoza,2025-06-24 11:49,Takeaway,Beverage,Green Smoothie,3,4.34,13.02,Mobile Payment,-,-,Tuesday,Lunch,
+1264,C858,Ann Doyle,2025-06-18 17:23,Dine-In,Food,Veggie Sandwich,1,13.51,13.51,Mobile Payment,Sophia,9,Wednesday,Dinner,Gluten-free
+1265,C415,Brian Huynh,2025-06-17 06:28,Delivery,Food,Pasta Alfredo,2,7.46,14.92,Card,-,-,Tuesday,Breakfast,Extra ice
+1266,C486,Daniel Nichols,2025-06-19 17:52,Dine-In,Food,Caesar Salad,3,11.94,35.82,Cash,Robert,11,Thursday,Dinner,
+1267,C830,Alicia Garcia,2025-06-16 21:08,Takeaway,Food,Beef Burger,1,5.1,5.1,Card,-,-,Monday,Late Night,Dressing on the side
+1268,C225,Samantha Montgomery,2025-06-27 06:10,Delivery,Food,Sushi Roll,1,9.88,9.88,Card,-,-,Friday,Breakfast,No cheese
+1269,C844,Jeremy Peterson,2025-06-16 07:43,Dine-In,Beverage,Green Smoothie,2,3.21,6.42,Card,Michael,14,Monday,Breakfast,Skim milk
+1270,C855,Deborah Mcdonald,2025-06-27 18:54,Delivery,Food,Sushi Roll,3,13.67,41.01,Mobile Payment,-,-,Friday,Dinner,Extra cheese
+1271,C661,Tyler Thomas,2025-06-23 22:43,Dine-In,Food,Caesar Salad,1,9.1,9.1,Card,Daniel,3,Monday,Late Night,
+1272,C222,Veronica Hanna,2025-06-20 08:48,Takeaway,Food,Beef Burger,3,18.39,55.17,Card,-,-,Friday,Breakfast,
+1273,C174,Caitlin Cohen,2025-06-17 13:12,Takeaway,Food,Veggie Sandwich,3,15.73,47.19,Mobile Payment,-,-,Tuesday,Lunch,Extra ice
+1274,C253,Paul Sloan,2025-06-03 11:50,Takeaway,Beverage,Mineral Water,2,9.98,19.96,Card,-,-,Tuesday,Lunch,Extra ice
+1275,C950,Dawn Chandler,2025-06-19 14:35,Takeaway,Food,Caesar Salad,2,9.04,18.08,Mobile Payment,-,-,Thursday,Lunch,Extra ice
+1276,C1000,Paul Young,2025-06-02 19:50,Delivery,Food,Veggie Sandwich,2,15.38,30.76,Card,-,-,Monday,Dinner,Gluten-free
+1277,C572,Karen Montoya MD,2025-06-17 08:31,Dine-In,Beverage,Mineral Water,1,3.42,3.42,Cash,Sophia,13,Tuesday,Breakfast,Extra ice
+1278,C544,Angela Watson,2025-06-10 20:59,Dine-In,Beverage,Mineral Water,2,9.41,18.82,Cash,Alice,10,Tuesday,Dinner,Dressing on the side
+1279,C979,Wendy Lee,2025-06-10 17:33,Dine-In,Food,Veggie Sandwich,2,12.31,24.62,Cash,Sophia,20,Tuesday,Dinner,Extra ice
+1280,C128,Angela Freeman,2025-06-15 18:35,Takeaway,Food,Pasta Alfredo,2,4.85,9.7,Mobile Payment,-,-,Sunday,Dinner,Skim milk
+1281,C029,Brian Sherman MD,2025-06-13 13:07,Dine-In,Beverage,Mojito,1,4.17,4.17,Cash,Daniel,17,Friday,Lunch,
+1282,C987,Tonya Webster,2025-06-23 22:35,Delivery,Beverage,Fresh Orange Juice,3,17.42,52.26,Card,-,-,Monday,Late Night,Less sugar
+1283,C243,Michael Mayer,2025-06-02 17:14,Delivery,Beverage,Iced Tea,1,8.91,8.91,Card,-,-,Monday,Dinner,Extra cheese
+1284,C097,Rhonda Martinez,2025-06-28 22:38,Delivery,Beverage,Green Smoothie,2,18.54,37.08,Mobile Payment,-,-,Saturday,Late Night,Skim milk
+1285,C997,Anita Johnson,2025-06-28 13:08,Dine-In,Beverage,Mojito,3,14.09,42.27,Card,Sophia,14,Saturday,Lunch,
+1286,C300,Colleen Holland,2025-06-01 11:56,Takeaway,Food,Caesar Salad,1,16.6,16.6,Cash,-,-,Sunday,Lunch,Less sugar
+1287,C008,Gerald Turner,2025-06-30 17:40,Dine-In,Food,Margherita Pizza,3,19.21,57.63,Cash,Alice,18,Monday,Dinner,
+1288,C145,Vanessa Barr,2025-06-02 20:31,Dine-In,Beverage,Mineral Water,3,11.46,34.38,Card,Michael,6,Monday,Dinner,Dressing on the side
+1289,C177,Christopher Blankenship,2025-06-02 12:28,Takeaway,Food,Margherita Pizza,3,18.94,56.82,Mobile Payment,-,-,Monday,Lunch,Extra cheese
+1290,C283,James Obrien,2025-06-04 19:14,Delivery,Beverage,Fresh Orange Juice,1,8.91,8.91,Cash,-,-,Wednesday,Dinner,Extra cheese
+1291,C190,Linda Cobb,2025-06-23 13:30,Dine-In,Beverage,Fresh Orange Juice,1,5.61,5.61,Card,Michael,19,Monday,Lunch,Dressing on the side
+1292,C189,Ann Kelly,2025-06-22 21:17,Takeaway,Beverage,Mojito,1,12.34,12.34,Cash,-,-,Sunday,Late Night,Skim milk
+1293,C230,Anthony Wilkinson,2025-06-30 18:59,Takeaway,Beverage,Green Smoothie,3,18.0,54.0,Mobile Payment,-,-,Monday,Dinner,
+1294,C408,Jill Baldwin,2025-06-18 23:25,Delivery,Beverage,Mineral Water,3,17.32,51.96,Cash,-,-,Wednesday,Late Night,
+1295,C373,Kendra Shepherd,2025-06-26 12:06,Dine-In,Beverage,Cappuccino,1,13.46,13.46,Cash,Sophia,4,Thursday,Lunch,
+1296,C373,Samuel Nichols,2025-06-14 11:45,Takeaway,Beverage,Latte,2,4.73,9.46,Mobile Payment,-,-,Saturday,Lunch,Skim milk
+1297,C935,Kenneth Mcdonald,2025-06-27 09:40,Delivery,Food,Grilled Chicken,3,9.97,29.91,Card,-,-,Friday,Breakfast,Dressing on the side
+1298,C526,Shannon Johnson,2025-06-03 22:17,Takeaway,Food,Caesar Salad,2,11.14,22.28,Cash,-,-,Tuesday,Late Night,Extra cheese
+1299,C954,Michael Haney,2025-06-28 11:40,Takeaway,Beverage,Mineral Water,2,5.28,10.56,Card,-,-,Saturday,Lunch,No cheese
+1300,C678,John Powell,2025-06-10 19:51,Takeaway,Food,Grilled Chicken,2,12.72,25.44,Mobile Payment,-,-,Tuesday,Dinner,Less sugar
+1301,C666,Stacy Davis,2025-06-15 17:19,Dine-In,Beverage,Fresh Orange Juice,3,17.79,53.37,Card,Robert,7,Sunday,Dinner,No onions
+1302,C388,Connor Reed,2025-06-26 22:15,Delivery,Food,Pasta Alfredo,3,9.48,28.44,Cash,-,-,Thursday,Late Night,Extra cheese
+1303,C163,Robert Copeland,2025-06-15 12:33,Dine-In,Food,Beef Burger,3,17.43,52.29,Card,Alice,20,Sunday,Lunch,Gluten-free
+1304,C383,Andrew Pena,2025-06-22 23:20,Takeaway,Beverage,Mineral Water,3,9.2,27.6,Card,-,-,Sunday,Late Night,Gluten-free
+1305,C461,Tanner Underwood,2025-06-09 17:45,Dine-In,Food,Sushi Roll,2,11.05,22.1,Cash,Michael,17,Monday,Dinner,No cheese
+1306,C100,Michael Lowe,2025-06-10 11:16,Dine-In,Food,Beef Burger,3,9.79,29.37,Card,Michael,7,Tuesday,Lunch,Skim milk
+1307,C827,Amanda Freeman,2025-06-21 23:30,Delivery,Beverage,Latte,3,8.03,24.09,Cash,-,-,Saturday,Late Night,Extra cheese
+1308,C393,Erin Fields,2025-06-22 23:12,Takeaway,Beverage,Green Smoothie,2,18.21,36.42,Cash,-,-,Sunday,Late Night,Extra cheese
+1309,C432,Eric Taylor,2025-06-27 18:44,Dine-In,Food,Veggie Sandwich,2,9.96,19.92,Card,Michael,6,Friday,Dinner,Extra ice
+1310,C464,Ann Wright,2025-06-08 11:12,Takeaway,Beverage,Mineral Water,2,12.88,25.76,Mobile Payment,-,-,Sunday,Lunch,Less sugar
+1311,C819,Amanda Gomez,2025-06-02 21:51,Delivery,Food,Sushi Roll,3,10.88,32.64,Mobile Payment,-,-,Monday,Late Night,No cheese
+1312,C189,David Hobbs,2025-06-13 09:54,Takeaway,Food,Pasta Alfredo,1,4.94,4.94,Cash,-,-,Friday,Breakfast,No onions
+1313,C009,Megan Moore,2025-06-15 14:25,Dine-In,Food,Caesar Salad,2,11.52,23.04,Mobile Payment,Sophia,19,Sunday,Lunch,Less sugar
+1314,C858,Gail Lam,2025-06-13 23:30,Delivery,Food,Sushi Roll,3,9.85,29.55,Card,-,-,Friday,Late Night,Dressing on the side
+1315,C123,Susan Clark,2025-06-09 18:38,Dine-In,Beverage,Cappuccino,1,13.3,13.3,Card,Michael,19,Monday,Dinner,Skim milk
+1316,C049,Alexandria Mitchell,2025-06-18 07:27,Takeaway,Food,Pasta Alfredo,2,4.12,8.24,Card,-,-,Wednesday,Breakfast,No onions
+1317,C042,Robert Ramirez,2025-06-19 07:32,Takeaway,Food,Margherita Pizza,2,12.15,24.3,Cash,-,-,Thursday,Breakfast,No cheese
+1318,C332,Clifford Gray,2025-06-03 20:36,Dine-In,Beverage,Mojito,3,16.67,50.01,Mobile Payment,Michael,20,Tuesday,Dinner,No cheese
+1319,C058,Justin Williams,2025-06-05 23:24,Dine-In,Food,Margherita Pizza,2,5.62,11.24,Cash,Michael,2,Thursday,Late Night,Less sugar
+1320,C784,Nancy Hoffman,2025-06-26 08:57,Dine-In,Food,Sushi Roll,3,7.31,21.93,Card,Daniel,17,Thursday,Breakfast,No cheese
+1321,C439,Thomas Spencer,2025-06-12 09:40,Takeaway,Beverage,Mineral Water,3,9.58,28.74,Card,-,-,Thursday,Breakfast,Less sugar
+1322,C815,Laura Lewis,2025-06-01 19:24,Dine-In,Beverage,Green Smoothie,2,10.2,20.4,Cash,Michael,11,Sunday,Dinner,Gluten-free
+1323,C077,Monica Wyatt,2025-06-04 13:48,Takeaway,Beverage,Mineral Water,3,14.04,42.12,Card,-,-,Wednesday,Lunch,Extra ice
+1324,C682,Chase Ali,2025-06-03 23:53,Delivery,Beverage,Green Smoothie,3,11.78,35.34,Mobile Payment,-,-,Tuesday,Late Night,Gluten-free
+1325,C773,Ms. Karen Taylor,2025-06-12 12:34,Delivery,Beverage,Iced Tea,1,19.74,19.74,Card,-,-,Thursday,Lunch,Extra cheese
+1326,C260,Charles Howard,2025-06-19 13:26,Delivery,Food,Grilled Chicken,1,3.05,3.05,Card,-,-,Thursday,Lunch,Dressing on the side
+1327,C030,Kristi Garcia,2025-06-20 12:29,Dine-In,Beverage,Mineral Water,1,18.1,18.1,Mobile Payment,Robert,14,Friday,Lunch,Gluten-free
+1328,C981,Maria Odom,2025-06-04 09:21,Takeaway,Beverage,Iced Tea,2,17.64,35.28,Card,-,-,Wednesday,Breakfast,Extra cheese
+1329,C985,Shannon Berger,2025-06-07 22:00,Dine-In,Beverage,Mineral Water,3,18.46,55.38,Mobile Payment,Alice,5,Saturday,Late Night,Skim milk
+1330,C777,Isaac Odonnell MD,2025-06-24 11:11,Delivery,Food,Grilled Chicken,3,13.2,39.6,Mobile Payment,-,-,Tuesday,Lunch,Extra cheese
+1331,C873,Brenda Lee,2025-06-28 06:44,Takeaway,Food,Caesar Salad,3,11.34,34.02,Card,-,-,Saturday,Breakfast,No cheese
+1332,C890,Sheryl Herrera,2025-06-12 09:10,Takeaway,Beverage,Green Smoothie,1,8.38,8.38,Cash,-,-,Thursday,Breakfast,
+1333,C928,Alexa Harris,2025-06-05 08:01,Dine-In,Beverage,Latte,2,15.21,30.42,Card,Robert,16,Thursday,Breakfast,Less sugar
+1334,C838,Michael Gonzalez,2025-06-19 07:36,Dine-In,Beverage,Iced Tea,3,14.06,42.18,Card,Alice,12,Thursday,Breakfast,No onions
+1335,C281,Clifford Brown,2025-06-04 19:15,Delivery,Beverage,Mojito,2,6.94,13.88,Mobile Payment,-,-,Wednesday,Dinner,Skim milk
+1336,C254,Kevin Ramos,2025-06-14 13:17,Takeaway,Food,Beef Burger,2,10.08,20.16,Card,-,-,Saturday,Lunch,Gluten-free
+1337,C223,Eric Rogers,2025-06-05 07:10,Dine-In,Beverage,Green Smoothie,3,7.63,22.89,Mobile Payment,Michael,10,Thursday,Breakfast,Gluten-free
+1338,C614,Michael Williams,2025-06-14 20:10,Takeaway,Food,Pasta Alfredo,2,14.52,29.04,Card,-,-,Saturday,Dinner,Dressing on the side
+1339,C625,Joshua Luna,2025-06-25 12:46,Delivery,Beverage,Iced Tea,2,17.44,34.88,Card,-,-,Wednesday,Lunch,Skim milk
+1340,C629,Laura Lynch,2025-06-19 21:52,Dine-In,Food,Sushi Roll,3,10.97,32.91,Mobile Payment,Sophia,9,Thursday,Late Night,Gluten-free
+1341,C474,Melanie Sheppard,2025-06-28 17:46,Delivery,Food,Grilled Chicken,3,13.55,40.65,Cash,-,-,Saturday,Dinner,No onions
+1342,C697,Jacqueline Perez,2025-06-04 11:55,Dine-In,Food,Sushi Roll,3,11.82,35.46,Cash,Sophia,3,Wednesday,Lunch,
+1343,C192,Linda Meyer,2025-06-28 07:07,Dine-In,Food,Sushi Roll,3,6.25,18.75,Mobile Payment,Alice,20,Saturday,Breakfast,
+1344,C448,Anthony Hudson,2025-06-07 14:43,Takeaway,Food,Caesar Salad,2,13.43,26.86,Mobile Payment,-,-,Saturday,Lunch,No cheese
+1345,C829,Ariel Johnson,2025-06-15 18:26,Takeaway,Food,Caesar Salad,1,11.28,11.28,Card,-,-,Sunday,Dinner,Extra ice
+1346,C743,William Rowe,2025-06-21 10:52,Dine-In,Beverage,Mojito,3,17.24,51.72,Mobile Payment,Robert,20,Saturday,Breakfast,
+1347,C015,Rachael Rodgers,2025-06-08 12:45,Dine-In,Beverage,Cappuccino,2,3.62,7.24,Card,Alice,10,Sunday,Lunch,Extra ice
+1348,C254,Jennifer Estrada,2025-06-08 09:20,Delivery,Food,Pasta Alfredo,2,4.83,9.66,Cash,-,-,Sunday,Breakfast,
+1349,C237,Mitchell Mack,2025-06-06 22:24,Dine-In,Beverage,Fresh Orange Juice,2,16.79,33.58,Cash,Daniel,18,Friday,Late Night,Extra cheese
+1350,C918,Ryan Page,2025-06-05 11:45,Takeaway,Food,Veggie Sandwich,3,4.11,12.33,Cash,-,-,Thursday,Lunch,Less sugar
+1351,C483,Christopher Zavala,2025-06-08 09:27,Dine-In,Beverage,Latte,3,6.36,19.08,Mobile Payment,Michael,11,Sunday,Breakfast,No onions
+1352,C180,Nicole Henry,2025-06-12 07:02,Dine-In,Beverage,Cappuccino,1,18.61,18.61,Mobile Payment,Sophia,16,Thursday,Breakfast,No onions
+1353,C014,Leah Martin,2025-06-19 08:22,Delivery,Beverage,Latte,3,17.87,53.61,Mobile Payment,-,-,Thursday,Breakfast,Less sugar
+1354,C626,Matthew Gregory,2025-06-15 12:51,Takeaway,Food,Grilled Chicken,1,7.82,7.82,Mobile Payment,-,-,Sunday,Lunch,Dressing on the side
+1355,C317,Dorothy Gray,2025-06-03 08:34,Dine-In,Food,Margherita Pizza,2,14.72,29.44,Cash,Robert,11,Tuesday,Breakfast,Less sugar
+1356,C877,David Schroeder,2025-06-29 20:36,Takeaway,Food,Veggie Sandwich,1,4.78,4.78,Cash,-,-,Sunday,Dinner,No onions
+1357,C312,Nancy Alexander,2025-06-28 20:12,Delivery,Beverage,Green Smoothie,2,9.11,18.22,Cash,-,-,Saturday,Dinner,Extra ice
+1358,C345,Donald Sheppard,2025-06-17 08:30,Dine-In,Beverage,Iced Tea,1,7.14,7.14,Cash,Michael,7,Tuesday,Breakfast,No cheese
+1359,C545,Melinda Grant,2025-06-13 09:02,Dine-In,Beverage,Latte,3,5.4,16.2,Card,Robert,6,Friday,Breakfast,Dressing on the side
+1360,C403,Ashley Murphy,2025-06-16 08:19,Delivery,Beverage,Green Smoothie,3,12.08,36.24,Cash,-,-,Monday,Breakfast,Extra ice
+1361,C432,Denise Crawford,2025-06-20 08:28,Dine-In,Beverage,Cappuccino,2,14.18,28.36,Cash,Alice,19,Friday,Breakfast,Gluten-free
+1362,C666,Lisa Martinez,2025-06-12 12:56,Dine-In,Beverage,Green Smoothie,1,5.99,5.99,Mobile Payment,Robert,13,Thursday,Lunch,Dressing on the side
+1363,C783,Justin Watts,2025-06-09 08:17,Takeaway,Beverage,Fresh Orange Juice,3,12.51,37.53,Card,-,-,Monday,Breakfast,
+1364,C447,Anna Arias,2025-06-04 18:10,Dine-In,Beverage,Mineral Water,1,10.92,10.92,Mobile Payment,Robert,4,Wednesday,Dinner,Less sugar
+1365,C140,Cheryl Knight,2025-06-14 21:58,Takeaway,Food,Margherita Pizza,1,17.4,17.4,Mobile Payment,-,-,Saturday,Late Night,No cheese
+1366,C318,Benjamin Davila,2025-06-20 10:35,Dine-In,Beverage,Cappuccino,1,4.25,4.25,Card,Robert,18,Friday,Breakfast,No onions
+1367,C512,Kathleen Kidd,2025-06-10 14:05,Dine-In,Beverage,Mineral Water,2,9.51,19.02,Mobile Payment,Michael,12,Tuesday,Lunch,Extra cheese
+1368,C051,Tim Carpenter,2025-06-23 12:25,Dine-In,Beverage,Mojito,2,4.52,9.04,Card,Sophia,13,Monday,Lunch,Dressing on the side
+1369,C241,Matthew Lutz II,2025-06-26 22:13,Takeaway,Food,Sushi Roll,1,7.17,7.17,Mobile Payment,-,-,Thursday,Late Night,
+1370,C753,Janet Lam,2025-06-29 13:41,Delivery,Food,Pasta Alfredo,3,18.49,55.47,Card,-,-,Sunday,Lunch,Less sugar
+1371,C527,Dalton Larsen,2025-06-19 11:49,Takeaway,Beverage,Mineral Water,3,18.75,56.25,Mobile Payment,-,-,Thursday,Lunch,Skim milk
+1372,C208,Taylor Ramirez,2025-06-26 19:38,Delivery,Food,Grilled Chicken,2,19.01,38.02,Card,-,-,Thursday,Dinner,Dressing on the side
+1373,C712,James Coleman,2025-06-14 20:21,Delivery,Beverage,Fresh Orange Juice,2,4.64,9.28,Cash,-,-,Saturday,Dinner,Gluten-free
+1374,C207,Jose Friedman,2025-06-18 12:54,Dine-In,Food,Sushi Roll,3,19.42,58.26,Cash,Daniel,19,Wednesday,Lunch,Gluten-free
+1375,C154,Matthew Spencer,2025-06-03 13:00,Takeaway,Food,Beef Burger,1,7.17,7.17,Mobile Payment,-,-,Tuesday,Lunch,Skim milk
+1376,C579,Matthew Rhodes,2025-06-27 21:18,Delivery,Beverage,Iced Tea,2,8.28,16.56,Card,-,-,Friday,Late Night,Extra cheese
+1377,C912,Michael Gonzales,2025-06-06 08:51,Dine-In,Beverage,Iced Tea,3,16.68,50.04,Cash,Alice,5,Friday,Breakfast,Dressing on the side
+1378,C156,Sarah Davis,2025-06-05 11:28,Dine-In,Beverage,Mineral Water,2,9.33,18.66,Mobile Payment,Alice,3,Thursday,Lunch,Dressing on the side
+1379,C368,Timothy Perez,2025-06-08 17:13,Dine-In,Food,Margherita Pizza,2,9.05,18.1,Mobile Payment,Michael,15,Sunday,Dinner,Dressing on the side
+1380,C938,Juan Stephens,2025-06-29 09:42,Delivery,Beverage,Cappuccino,1,18.98,18.98,Mobile Payment,-,-,Sunday,Breakfast,Extra cheese
+1381,C371,Samuel Smith,2025-06-13 22:17,Takeaway,Beverage,Green Smoothie,3,9.11,27.33,Cash,-,-,Friday,Late Night,No cheese
+1382,C525,Brian Webb,2025-06-06 11:55,Delivery,Food,Grilled Chicken,1,14.21,14.21,Mobile Payment,-,-,Friday,Lunch,Dressing on the side
+1383,C461,Barbara Gentry,2025-06-10 14:03,Takeaway,Beverage,Cappuccino,2,18.67,37.34,Cash,-,-,Tuesday,Lunch,Less sugar
+1384,C743,George Hubbard,2025-06-13 07:09,Dine-In,Beverage,Latte,3,15.42,46.26,Cash,Daniel,13,Friday,Breakfast,No onions
+1385,C352,Hunter Powers,2025-06-13 10:14,Dine-In,Beverage,Mojito,3,19.74,59.22,Mobile Payment,Michael,8,Friday,Breakfast,Extra cheese
+1386,C267,Allison Craig,2025-06-05 13:40,Dine-In,Beverage,Green Smoothie,3,4.71,14.13,Cash,Sophia,19,Thursday,Lunch,Gluten-free
+1387,C332,Mary Adams,2025-06-24 22:44,Dine-In,Food,Caesar Salad,1,12.54,12.54,Cash,Robert,17,Tuesday,Late Night,Dressing on the side
+1388,C499,James Hines,2025-06-07 18:40,Delivery,Beverage,Mineral Water,1,8.06,8.06,Cash,-,-,Saturday,Dinner,Extra cheese
+1389,C264,Kara Lawrence,2025-06-17 08:52,Takeaway,Food,Caesar Salad,3,3.86,11.58,Cash,-,-,Tuesday,Breakfast,
+1390,C142,Alexander Peterson,2025-06-23 21:04,Delivery,Beverage,Iced Tea,3,3.11,9.33,Mobile Payment,-,-,Monday,Late Night,Skim milk
+1391,C301,Connie Morales,2025-06-16 23:34,Dine-In,Beverage,Cappuccino,2,6.32,12.64,Mobile Payment,Robert,5,Monday,Late Night,No cheese
+1392,C660,James Mendoza,2025-06-20 23:13,Delivery,Beverage,Cappuccino,3,4.4,13.2,Mobile Payment,-,-,Friday,Late Night,Extra cheese
+1393,C504,Cassie Bentley,2025-06-03 17:41,Delivery,Food,Caesar Salad,1,5.86,5.86,Mobile Payment,-,-,Tuesday,Dinner,No cheese
+1394,C586,Leah Scott,2025-06-28 19:43,Delivery,Food,Caesar Salad,1,10.92,10.92,Cash,-,-,Saturday,Dinner,Skim milk
+1395,C923,Tammy Gomez,2025-06-04 23:13,Dine-In,Food,Sushi Roll,2,13.55,27.1,Mobile Payment,Sophia,2,Wednesday,Late Night,No onions
+1396,C712,Mary Smith,2025-06-14 21:58,Dine-In,Beverage,Green Smoothie,1,8.17,8.17,Card,Robert,7,Saturday,Late Night,Extra cheese
+1397,C363,Robin Andrews,2025-06-16 21:21,Delivery,Food,Veggie Sandwich,3,4.48,13.44,Card,-,-,Monday,Late Night,No cheese
+1398,C950,Paul Leonard,2025-06-15 23:32,Dine-In,Food,Veggie Sandwich,1,9.6,9.6,Card,Alice,20,Sunday,Late Night,Less sugar
+1399,C831,Jennifer Zimmerman,2025-06-29 23:34,Delivery,Food,Caesar Salad,1,15.08,15.08,Card,-,-,Sunday,Late Night,Extra cheese
+1400,C047,Jean Thomas,2025-06-10 10:04,Dine-In,Food,Veggie Sandwich,3,5.17,15.51,Mobile Payment,Michael,7,Tuesday,Breakfast,Skim milk
+1401,C402,Kevin Jones,2025-06-19 12:02,Delivery,Food,Caesar Salad,3,15.92,47.76,Cash,-,-,Thursday,Lunch,Less sugar
+1402,C447,Mrs. April Guzman,2025-06-06 21:46,Takeaway,Food,Sushi Roll,3,3.63,10.89,Card,-,-,Friday,Late Night,Less sugar
+1403,C581,Amy Lane,2025-06-06 21:42,Delivery,Food,Veggie Sandwich,1,9.0,9.0,Mobile Payment,-,-,Friday,Late Night,No cheese
+1404,C877,Yolanda Munoz,2025-06-21 18:11,Dine-In,Beverage,Mineral Water,2,18.97,37.94,Cash,Robert,12,Saturday,Dinner,
+1405,C376,Shelby Morgan,2025-06-26 18:12,Dine-In,Beverage,Cappuccino,3,10.86,32.58,Card,Sophia,14,Thursday,Dinner,Less sugar
+1406,C541,Joe House,2025-06-05 23:30,Dine-In,Food,Pasta Alfredo,2,5.72,11.44,Cash,Alice,5,Thursday,Late Night,Gluten-free
+1407,C948,Jennifer Griffin,2025-06-12 14:47,Dine-In,Beverage,Mojito,2,7.44,14.88,Mobile Payment,Sophia,18,Thursday,Lunch,Extra cheese
+1408,C958,Tammy Myers,2025-06-29 21:13,Dine-In,Beverage,Green Smoothie,3,9.32,27.96,Mobile Payment,Alice,15,Sunday,Late Night,Dressing on the side
+1409,C448,Adam King,2025-06-07 17:25,Takeaway,Food,Caesar Salad,3,10.18,30.54,Mobile Payment,-,-,Saturday,Dinner,Extra cheese
+1410,C006,Christine Gilbert,2025-06-06 09:09,Delivery,Food,Veggie Sandwich,2,13.32,26.64,Cash,-,-,Friday,Breakfast,Gluten-free
+1411,C864,Jennifer Stokes,2025-06-15 19:54,Takeaway,Food,Grilled Chicken,1,12.64,12.64,Mobile Payment,-,-,Sunday,Dinner,Extra cheese
+1412,C866,Robert Martin,2025-06-25 06:49,Takeaway,Food,Grilled Chicken,1,12.66,12.66,Cash,-,-,Wednesday,Breakfast,Extra cheese
+1413,C193,Richard Johnson,2025-06-23 17:37,Dine-In,Beverage,Cappuccino,1,13.51,13.51,Cash,Michael,5,Monday,Dinner,Extra ice
+1414,C213,Gina Daniels,2025-06-05 11:39,Dine-In,Food,Grilled Chicken,3,12.25,36.75,Mobile Payment,Michael,19,Thursday,Lunch,Extra cheese
+1415,C894,Jared Solis,2025-06-25 20:59,Delivery,Beverage,Iced Tea,1,7.22,7.22,Cash,-,-,Wednesday,Dinner,Extra ice
+1416,C640,Carol Harrison,2025-06-05 21:04,Delivery,Food,Margherita Pizza,1,15.66,15.66,Mobile Payment,-,-,Thursday,Late Night,Extra ice
+1417,C524,Kenneth Brown,2025-06-30 10:38,Delivery,Beverage,Latte,1,4.01,4.01,Mobile Payment,-,-,Monday,Breakfast,Gluten-free
+1418,C257,Amy Cline,2025-06-11 06:43,Takeaway,Food,Grilled Chicken,1,18.5,18.5,Cash,-,-,Wednesday,Breakfast,Extra cheese
+1419,C507,Valerie Griffin,2025-06-20 23:04,Delivery,Beverage,Mineral Water,1,8.42,8.42,Card,-,-,Friday,Late Night,
+1420,C390,Gerald Short,2025-06-13 11:52,Delivery,Beverage,Iced Tea,1,7.33,7.33,Card,-,-,Friday,Lunch,No cheese
+1421,C751,Kristy Potter,2025-06-12 10:06,Dine-In,Food,Sushi Roll,1,17.53,17.53,Card,Sophia,13,Thursday,Breakfast,
+1422,C871,Aaron Bradley,2025-06-03 06:27,Takeaway,Food,Pasta Alfredo,3,15.56,46.68,Mobile Payment,-,-,Tuesday,Breakfast,Extra ice
+1423,C735,Robert Ramirez,2025-06-28 21:10,Takeaway,Beverage,Mineral Water,2,3.11,6.22,Card,-,-,Saturday,Late Night,Less sugar
+1424,C834,Lisa Stewart,2025-06-04 22:15,Delivery,Beverage,Mineral Water,3,9.79,29.37,Cash,-,-,Wednesday,Late Night,Less sugar
+1425,C212,Michael Lee,2025-06-13 07:31,Delivery,Food,Pasta Alfredo,1,8.25,8.25,Mobile Payment,-,-,Friday,Breakfast,
+1426,C272,Luke Koch,2025-06-01 20:43,Delivery,Beverage,Iced Tea,1,5.7,5.7,Card,-,-,Sunday,Dinner,No cheese
+1427,C711,Peter Ray,2025-06-07 22:58,Dine-In,Food,Grilled Chicken,1,17.08,17.08,Mobile Payment,Daniel,16,Saturday,Late Night,Skim milk
+1428,C377,Matthew Bird,2025-06-29 10:47,Dine-In,Food,Grilled Chicken,3,10.88,32.64,Mobile Payment,Sophia,11,Sunday,Breakfast,Extra ice
+1429,C379,Evelyn Berg,2025-06-01 18:15,Delivery,Beverage,Latte,1,6.54,6.54,Mobile Payment,-,-,Sunday,Dinner,Dressing on the side
+1430,C620,Christine Harris,2025-06-03 21:33,Delivery,Food,Veggie Sandwich,3,7.15,21.45,Mobile Payment,-,-,Tuesday,Late Night,Gluten-free
+1431,C343,Nicole Gray,2025-06-07 21:29,Delivery,Food,Veggie Sandwich,3,14.27,42.81,Cash,-,-,Saturday,Late Night,No cheese
+1432,C440,Frances Richard,2025-06-12 10:40,Dine-In,Beverage,Iced Tea,3,13.11,39.33,Mobile Payment,Daniel,3,Thursday,Breakfast,Skim milk
+1433,C911,Tricia Rasmussen,2025-06-16 07:39,Takeaway,Food,Pasta Alfredo,1,6.83,6.83,Mobile Payment,-,-,Monday,Breakfast,Less sugar
+1434,C716,Wendy Wilson,2025-06-08 09:31,Takeaway,Food,Margherita Pizza,2,19.53,39.06,Cash,-,-,Sunday,Breakfast,Extra cheese
+1435,C807,Amy Woods,2025-06-04 12:29,Dine-In,Beverage,Mojito,3,14.3,42.9,Card,Sophia,19,Wednesday,Lunch,Gluten-free
+1436,C360,Madeline Dawson DDS,2025-06-15 09:48,Takeaway,Food,Grilled Chicken,2,18.13,36.26,Mobile Payment,-,-,Sunday,Breakfast,Extra ice
+1437,C815,Jesse Leonard,2025-06-23 18:24,Takeaway,Food,Caesar Salad,1,17.44,17.44,Mobile Payment,-,-,Monday,Dinner,Skim milk
+1438,C721,Joshua Norman,2025-06-28 23:29,Delivery,Food,Grilled Chicken,3,12.79,38.37,Mobile Payment,-,-,Saturday,Late Night,Extra ice
+1439,C721,Joseph Smith,2025-06-13 11:50,Takeaway,Beverage,Iced Tea,1,17.7,17.7,Cash,-,-,Friday,Lunch,Extra cheese
+1440,C861,Scott Mann,2025-06-18 11:57,Dine-In,Beverage,Cappuccino,3,8.4,25.2,Cash,Robert,12,Wednesday,Lunch,Extra cheese
+1441,C424,Patrick Hobbs,2025-06-26 08:45,Takeaway,Food,Beef Burger,1,19.66,19.66,Cash,-,-,Thursday,Breakfast,Extra ice
+1442,C452,Matthew Williams,2025-06-25 20:37,Delivery,Beverage,Cappuccino,3,15.5,46.5,Cash,-,-,Wednesday,Dinner,No cheese
+1443,C673,Peter Townsend,2025-06-20 12:25,Delivery,Beverage,Cappuccino,3,11.05,33.15,Cash,-,-,Friday,Lunch,No cheese
+1444,C617,Katherine Moore,2025-06-13 13:12,Dine-In,Beverage,Cappuccino,3,6.7,20.1,Card,Robert,1,Friday,Lunch,
+1445,C668,Beth Bennett,2025-06-09 23:12,Dine-In,Food,Caesar Salad,2,6.33,12.66,Card,Alice,14,Monday,Late Night,No cheese
+1446,C003,Bryan Patterson,2025-06-24 17:58,Dine-In,Food,Caesar Salad,3,19.04,57.12,Mobile Payment,Robert,18,Tuesday,Dinner,No onions
+1447,C700,Jacqueline Wilson,2025-06-11 12:02,Takeaway,Beverage,Fresh Orange Juice,2,7.34,14.68,Mobile Payment,-,-,Wednesday,Lunch,Extra ice
+1448,C528,David Thompson,2025-06-19 19:21,Dine-In,Food,Margherita Pizza,1,18.88,18.88,Card,Michael,12,Thursday,Dinner,Extra cheese
+1449,C581,Amanda Williams,2025-06-03 13:17,Delivery,Food,Margherita Pizza,2,17.83,35.66,Cash,-,-,Tuesday,Lunch,No cheese
+1450,C015,Taylor Harrison,2025-06-17 22:34,Dine-In,Food,Pasta Alfredo,3,10.97,32.91,Cash,Alice,12,Tuesday,Late Night,Less sugar
+1451,C398,Brent Warner,2025-06-09 21:57,Delivery,Food,Beef Burger,3,8.95,26.85,Cash,-,-,Monday,Late Night,Extra cheese
+1452,C138,Stephanie Walker,2025-06-17 21:30,Dine-In,Food,Margherita Pizza,3,15.37,46.11,Card,Sophia,3,Tuesday,Late Night,Skim milk
+1453,C857,Maria Zamora,2025-06-06 19:18,Dine-In,Beverage,Green Smoothie,2,5.12,10.24,Mobile Payment,Michael,20,Friday,Dinner,Less sugar
+1454,C692,James Castro,2025-06-07 21:56,Dine-In,Food,Veggie Sandwich,2,8.59,17.18,Mobile Payment,Sophia,19,Saturday,Late Night,No onions
+1455,C456,John Meza,2025-06-08 13:48,Delivery,Beverage,Mojito,1,9.93,9.93,Mobile Payment,-,-,Sunday,Lunch,Gluten-free
+1456,C156,Ronald Flores DDS,2025-06-03 22:47,Dine-In,Food,Pasta Alfredo,1,14.11,14.11,Card,Michael,12,Tuesday,Late Night,
+1457,C615,Crystal Chapman,2025-06-23 23:56,Dine-In,Beverage,Mineral Water,1,7.02,7.02,Cash,Michael,5,Monday,Late Night,Less sugar
+1458,C475,Steven Brooks,2025-06-22 23:37,Dine-In,Beverage,Cappuccino,1,7.21,7.21,Cash,Sophia,16,Sunday,Late Night,No onions
+1459,C842,David Harvey,2025-06-29 14:37,Takeaway,Food,Sushi Roll,2,18.22,36.44,Card,-,-,Sunday,Lunch,Less sugar
+1460,C741,Travis Lang,2025-06-01 22:15,Delivery,Food,Veggie Sandwich,2,3.29,6.58,Cash,-,-,Sunday,Late Night,Less sugar
+1461,C553,John Shea,2025-06-04 19:57,Delivery,Beverage,Cappuccino,1,16.29,16.29,Card,-,-,Wednesday,Dinner,Less sugar
+1462,C233,Kathleen Lane,2025-06-13 06:56,Delivery,Beverage,Iced Tea,1,12.86,12.86,Mobile Payment,-,-,Friday,Breakfast,Less sugar
+1463,C064,Anthony Patton,2025-06-04 20:39,Delivery,Food,Pasta Alfredo,1,11.38,11.38,Mobile Payment,-,-,Wednesday,Dinner,
+1464,C390,Kari Buchanan,2025-06-09 12:41,Delivery,Beverage,Mineral Water,1,13.06,13.06,Card,-,-,Monday,Lunch,Gluten-free
+1465,C396,Marie Thomas,2025-06-27 08:33,Takeaway,Food,Veggie Sandwich,2,5.57,11.14,Mobile Payment,-,-,Friday,Breakfast,Extra ice
+1466,C283,Sean Shaw,2025-06-29 09:03,Dine-In,Beverage,Green Smoothie,3,17.26,51.78,Mobile Payment,Daniel,3,Sunday,Breakfast,Dressing on the side
+1467,C664,Justin Walker,2025-06-11 23:52,Delivery,Beverage,Fresh Orange Juice,1,8.71,8.71,Cash,-,-,Wednesday,Late Night,Less sugar
+1468,C863,Alicia Brown,2025-06-09 07:49,Dine-In,Beverage,Mojito,3,14.35,43.05,Card,Alice,4,Monday,Breakfast,Gluten-free
+1469,C783,Ashley Heath,2025-06-03 06:04,Delivery,Beverage,Green Smoothie,3,9.46,28.38,Cash,-,-,Tuesday,Breakfast,
+1470,C701,Jessica Montoya,2025-06-29 18:59,Takeaway,Beverage,Fresh Orange Juice,1,11.87,11.87,Mobile Payment,-,-,Sunday,Dinner,Skim milk
+1471,C921,Maria Brown,2025-06-01 11:58,Delivery,Food,Caesar Salad,3,12.91,38.73,Card,-,-,Sunday,Lunch,Extra ice
+1472,C764,Mary Cruz,2025-06-08 12:53,Delivery,Food,Veggie Sandwich,2,5.24,10.48,Card,-,-,Sunday,Lunch,No onions
+1473,C462,Evan Cox,2025-06-07 19:08,Takeaway,Beverage,Iced Tea,3,15.04,45.12,Card,-,-,Saturday,Dinner,Less sugar
+1474,C114,Leah Riley,2025-06-26 20:48,Dine-In,Food,Pasta Alfredo,2,9.84,19.68,Cash,Alice,2,Thursday,Dinner,No cheese
+1475,C995,Luis Taylor,2025-06-25 13:42,Delivery,Beverage,Cappuccino,3,4.95,14.85,Card,-,-,Wednesday,Lunch,No cheese
+1476,C865,Andrew Ramsey,2025-06-05 18:10,Takeaway,Food,Pasta Alfredo,3,19.01,57.03,Cash,-,-,Thursday,Dinner,Extra cheese
+1477,C648,Allen Kennedy,2025-06-07 12:20,Delivery,Beverage,Cappuccino,3,13.93,41.79,Card,-,-,Saturday,Lunch,Less sugar
+1478,C246,Marcus Barnes,2025-06-02 23:10,Takeaway,Food,Veggie Sandwich,2,15.03,30.06,Cash,-,-,Monday,Late Night,
+1479,C483,Kevin Jacobs,2025-06-03 13:43,Delivery,Food,Caesar Salad,1,4.88,4.88,Card,-,-,Tuesday,Lunch,No onions
+1480,C739,Jean Thomas,2025-06-02 22:19,Delivery,Beverage,Mojito,2,4.76,9.52,Mobile Payment,-,-,Monday,Late Night,Less sugar
+1481,C116,Kelly Owen,2025-06-10 07:39,Takeaway,Beverage,Mineral Water,2,3.36,6.72,Mobile Payment,-,-,Tuesday,Breakfast,No onions
+1482,C845,Nicholas Allen,2025-06-23 22:37,Delivery,Food,Beef Burger,1,4.4,4.4,Mobile Payment,-,-,Monday,Late Night,No onions
+1483,C753,Blake Gonzalez,2025-06-24 19:31,Delivery,Beverage,Green Smoothie,2,13.81,27.62,Card,-,-,Tuesday,Dinner,Dressing on the side
+1484,C768,Collin Olson,2025-06-07 17:51,Takeaway,Beverage,Iced Tea,3,12.94,38.82,Mobile Payment,-,-,Saturday,Dinner,Extra ice
+1485,C299,Lauren Smith,2025-06-18 20:53,Delivery,Food,Sushi Roll,2,11.92,23.84,Card,-,-,Wednesday,Dinner,Dressing on the side
+1486,C573,Laurie Moses,2025-06-23 06:42,Dine-In,Beverage,Latte,3,4.73,14.19,Card,Sophia,1,Monday,Breakfast,Gluten-free
+1487,C259,Sandra Fernandez,2025-06-21 20:43,Takeaway,Food,Pasta Alfredo,3,14.3,42.9,Card,-,-,Saturday,Dinner,No cheese
+1488,C567,Virginia Ibarra,2025-06-17 09:19,Dine-In,Food,Beef Burger,1,9.19,9.19,Card,Daniel,3,Tuesday,Breakfast,Extra cheese
+1489,C419,Jacob Wright,2025-06-10 09:35,Dine-In,Food,Beef Burger,3,7.85,23.55,Cash,Robert,7,Tuesday,Breakfast,Less sugar
+1490,C146,David Garza,2025-06-07 14:02,Dine-In,Food,Veggie Sandwich,3,17.83,53.49,Card,Alice,1,Saturday,Lunch,Less sugar
+1491,C653,Carlos Cole,2025-06-09 14:01,Dine-In,Food,Grilled Chicken,1,13.76,13.76,Cash,Michael,15,Monday,Lunch,Gluten-free
+1492,C145,Ian Lewis,2025-06-13 10:06,Delivery,Food,Margherita Pizza,1,7.49,7.49,Card,-,-,Friday,Breakfast,Skim milk
+1493,C612,Christopher Carroll,2025-06-09 10:26,Dine-In,Food,Margherita Pizza,1,9.71,9.71,Card,Alice,15,Monday,Breakfast,Dressing on the side
+1494,C451,Elizabeth Jenkins,2025-06-07 10:09,Delivery,Beverage,Latte,2,14.84,29.68,Cash,-,-,Saturday,Breakfast,No cheese
+1495,C552,Andrew Taylor,2025-06-02 20:42,Delivery,Beverage,Fresh Orange Juice,2,15.12,30.24,Cash,-,-,Monday,Dinner,Gluten-free
+1496,C791,Lori Lee,2025-06-10 17:05,Dine-In,Beverage,Latte,2,18.06,36.12,Card,Daniel,3,Tuesday,Dinner,Less sugar
+1497,C082,Jimmy Jones,2025-06-03 19:04,Takeaway,Food,Margherita Pizza,1,8.93,8.93,Cash,-,-,Tuesday,Dinner,Skim milk
+1498,C694,Luke Morgan,2025-06-07 09:19,Dine-In,Beverage,Iced Tea,3,19.62,58.86,Cash,Sophia,17,Saturday,Breakfast,Dressing on the side
+1499,C524,Melissa Hughes,2025-06-20 18:20,Takeaway,Beverage,Latte,1,18.13,18.13,Cash,-,-,Friday,Dinner,Gluten-free
+1500,C863,Brittany Wilson,2025-06-22 19:33,Dine-In,Beverage,Cappuccino,2,10.47,20.94,Cash,Michael,17,Sunday,Dinner,Less sugar
+1501,C169,Jordan Watson,2025-06-21 23:52,Takeaway,Beverage,Fresh Orange Juice,3,9.63,28.89,Card,-,-,Saturday,Late Night,Gluten-free
+1502,C368,Mandy Swanson,2025-06-24 09:49,Dine-In,Food,Margherita Pizza,2,17.48,34.96,Cash,Robert,2,Tuesday,Breakfast,
+1503,C414,Dustin Lucas,2025-06-14 23:49,Dine-In,Food,Sushi Roll,2,12.11,24.22,Cash,Alice,15,Saturday,Late Night,Extra ice
+1504,C680,Meagan Burnett,2025-06-15 14:22,Dine-In,Beverage,Mineral Water,2,17.06,34.12,Mobile Payment,Alice,2,Sunday,Lunch,Extra cheese
+1505,C669,Angela Brown,2025-06-17 14:57,Takeaway,Beverage,Fresh Orange Juice,3,19.0,57.0,Mobile Payment,-,-,Tuesday,Lunch,
+1506,C090,Matthew Lee,2025-06-09 17:00,Delivery,Food,Beef Burger,3,10.72,32.16,Card,-,-,Monday,Dinner,No cheese
+1507,C248,Scott Mccall,2025-06-17 23:52,Delivery,Beverage,Mojito,2,12.44,24.88,Mobile Payment,-,-,Tuesday,Late Night,Extra cheese
+1508,C039,Brian Boyd,2025-06-04 23:21,Dine-In,Beverage,Cappuccino,1,7.98,7.98,Card,Alice,14,Wednesday,Late Night,Gluten-free
+1509,C848,Nina Harper,2025-06-01 21:03,Delivery,Beverage,Latte,2,9.88,19.76,Card,-,-,Sunday,Late Night,Dressing on the side
+1510,C439,Barbara Phillips,2025-06-08 11:47,Delivery,Beverage,Iced Tea,3,4.12,12.36,Mobile Payment,-,-,Sunday,Lunch,Gluten-free
+1511,C896,Sarah Cook,2025-06-04 09:34,Takeaway,Food,Pasta Alfredo,3,15.89,47.67,Card,-,-,Wednesday,Breakfast,Extra ice
+1512,C212,Jennifer Rodgers,2025-06-08 23:40,Delivery,Food,Pasta Alfredo,2,17.12,34.24,Card,-,-,Sunday,Late Night,
+1513,C550,Mary Vaughn,2025-06-28 08:48,Takeaway,Beverage,Fresh Orange Juice,1,11.1,11.1,Cash,-,-,Saturday,Breakfast,Extra cheese
+1514,C235,Stephanie Freeman,2025-06-06 19:23,Dine-In,Beverage,Cappuccino,3,16.55,49.65,Cash,Sophia,17,Friday,Dinner,Skim milk
+1515,C060,Sherri Bishop,2025-06-22 23:43,Takeaway,Food,Pasta Alfredo,1,14.91,14.91,Card,-,-,Sunday,Late Night,Skim milk
+1516,C976,Haley Brandt,2025-06-29 13:42,Dine-In,Beverage,Cappuccino,1,12.65,12.65,Cash,Sophia,20,Sunday,Lunch,Gluten-free
+1517,C378,Steven Hernandez,2025-06-01 23:50,Takeaway,Beverage,Iced Tea,1,11.22,11.22,Cash,-,-,Sunday,Late Night,Gluten-free
+1518,C097,Michelle Smith,2025-06-22 11:54,Takeaway,Beverage,Green Smoothie,1,8.18,8.18,Cash,-,-,Sunday,Lunch,Dressing on the side
+1519,C358,James Watts,2025-06-06 20:27,Dine-In,Food,Veggie Sandwich,3,12.53,37.59,Card,Robert,11,Friday,Dinner,Extra ice
+1520,C116,Mary Odonnell,2025-06-20 12:33,Delivery,Food,Pasta Alfredo,3,8.67,26.01,Mobile Payment,-,-,Friday,Lunch,Gluten-free
+1521,C433,Riley Roberson,2025-06-05 18:39,Delivery,Food,Caesar Salad,3,15.64,46.92,Cash,-,-,Thursday,Dinner,Gluten-free
+1522,C860,Mary Hensley,2025-06-09 13:55,Delivery,Food,Margherita Pizza,2,5.77,11.54,Card,-,-,Monday,Lunch,Skim milk
+1523,C224,Alexis Watkins,2025-06-15 14:05,Dine-In,Beverage,Iced Tea,2,14.0,28.0,Card,Daniel,6,Sunday,Lunch,Extra cheese
+1524,C140,Miss Shelly Sullivan,2025-06-18 22:29,Takeaway,Food,Grilled Chicken,3,10.79,32.37,Cash,-,-,Wednesday,Late Night,Extra cheese
+1525,C549,Jordan Terry,2025-06-06 17:52,Takeaway,Food,Margherita Pizza,3,16.36,49.08,Cash,-,-,Friday,Dinner,Extra cheese
+1526,C402,Deborah Foster,2025-06-19 12:32,Delivery,Food,Veggie Sandwich,2,4.62,9.24,Card,-,-,Thursday,Lunch,Gluten-free
+1527,C935,Dr. Joyce Barnett,2025-06-09 10:43,Takeaway,Food,Pasta Alfredo,3,9.78,29.34,Mobile Payment,-,-,Monday,Breakfast,Less sugar
+1528,C119,Mr. Joe Wall,2025-06-23 17:53,Dine-In,Food,Caesar Salad,2,9.16,18.32,Cash,Robert,7,Monday,Dinner,No cheese
+1529,C483,Kevin Kaufman,2025-06-01 07:59,Delivery,Beverage,Mineral Water,3,4.5,13.5,Mobile Payment,-,-,Sunday,Breakfast,
+1530,C309,Heather Reynolds,2025-06-03 23:40,Delivery,Food,Beef Burger,2,12.77,25.54,Card,-,-,Tuesday,Late Night,Less sugar
+1531,C069,Matthew Bradley,2025-06-30 19:14,Takeaway,Beverage,Fresh Orange Juice,3,17.49,52.47,Mobile Payment,-,-,Monday,Dinner,Extra cheese
+1532,C878,Ashley Lloyd,2025-06-16 17:04,Takeaway,Beverage,Cappuccino,2,3.37,6.74,Card,-,-,Monday,Dinner,
+1533,C315,Meredith Cardenas,2025-06-27 19:48,Dine-In,Food,Caesar Salad,3,6.64,19.92,Cash,Daniel,2,Friday,Dinner,Dressing on the side
+1534,C652,Kelly Rose,2025-06-28 17:00,Dine-In,Food,Grilled Chicken,3,16.09,48.27,Mobile Payment,Sophia,12,Saturday,Dinner,Less sugar
+1535,C393,Gary Warren,2025-06-14 09:43,Dine-In,Beverage,Mineral Water,3,11.18,33.54,Mobile Payment,Michael,7,Saturday,Breakfast,Dressing on the side
+1536,C076,David Galloway,2025-06-29 12:20,Takeaway,Food,Grilled Chicken,2,4.29,8.58,Cash,-,-,Sunday,Lunch,Dressing on the side
+1537,C309,Angela Brown,2025-06-05 20:29,Dine-In,Food,Caesar Salad,3,5.3,15.9,Cash,Robert,10,Thursday,Dinner,No onions
+1538,C349,Jimmy Hayden PhD,2025-06-14 20:21,Dine-In,Beverage,Green Smoothie,3,13.33,39.99,Cash,Sophia,5,Saturday,Dinner,Extra cheese
+1539,C492,Matthew Mcdowell,2025-06-14 22:55,Takeaway,Food,Caesar Salad,2,16.82,33.64,Card,-,-,Saturday,Late Night,Less sugar
+1540,C494,Kelly Cisneros,2025-06-09 13:02,Takeaway,Beverage,Mojito,2,10.25,20.5,Card,-,-,Monday,Lunch,No cheese
+1541,C457,Micheal Perez,2025-06-29 14:55,Delivery,Beverage,Mojito,3,15.93,47.79,Mobile Payment,-,-,Sunday,Lunch,Dressing on the side
+1542,C057,Jon Garcia,2025-06-18 12:18,Delivery,Beverage,Mojito,1,17.64,17.64,Card,-,-,Wednesday,Lunch,Skim milk
+1543,C100,Dawn Medina,2025-06-17 23:47,Takeaway,Beverage,Iced Tea,2,15.16,30.32,Card,-,-,Tuesday,Late Night,Extra ice
+1544,C953,Gloria Clark DDS,2025-06-16 22:55,Delivery,Beverage,Mojito,2,8.81,17.62,Mobile Payment,-,-,Monday,Late Night,Extra ice
+1545,C646,Victoria Ward,2025-06-28 21:49,Dine-In,Beverage,Iced Tea,2,19.82,39.64,Cash,Alice,17,Saturday,Late Night,No cheese
+1546,C568,April Bass,2025-06-09 06:35,Dine-In,Food,Sushi Roll,1,12.26,12.26,Card,Sophia,4,Monday,Breakfast,Extra cheese
+1547,C474,Jessica Taylor,2025-06-09 21:03,Takeaway,Food,Margherita Pizza,2,7.6,15.2,Cash,-,-,Monday,Late Night,Extra cheese
+1548,C850,Philip Moore,2025-06-10 07:52,Dine-In,Food,Beef Burger,3,10.99,32.97,Cash,Michael,9,Tuesday,Breakfast,Less sugar
+1549,C678,Mark Medina,2025-06-22 10:54,Dine-In,Food,Veggie Sandwich,2,16.52,33.04,Card,Daniel,6,Sunday,Breakfast,Skim milk
+1550,C235,Michael Nielsen,2025-06-08 19:10,Takeaway,Food,Pasta Alfredo,1,8.09,8.09,Cash,-,-,Sunday,Dinner,Less sugar
