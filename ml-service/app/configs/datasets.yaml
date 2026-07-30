@@ -1,0 +1,11 @@
+pizza_orders:
+  target: quantity
+
+coffee_orders:
+  target: quantity
+
+restaurant_sales:
+  target: Sales
+
+restaurant_orders:
+  target: order_total

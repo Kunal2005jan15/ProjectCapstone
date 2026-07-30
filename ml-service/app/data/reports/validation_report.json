@@ -1,0 +1,730 @@
+{
+    "pizza_orders": {
+        "rows": 21350,
+        "columns": 3,
+        "memory_mb": 2.52,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "order_id": 0,
+            "date": 0,
+            "time": 0
+        },
+        "missing_percent": {
+            "order_id": 0.0,
+            "date": 0.0,
+            "time": 0.0
+        },
+        "data_types": {
+            "order_id": "int64",
+            "date": "str",
+            "time": "str"
+        },
+        "unique_values": {
+            "order_id": 21350,
+            "date": 358,
+            "time": 16382
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [
+            "date"
+        ],
+        "quality_score": 100.0
+    },
+    "pizza_order_details": {
+        "rows": 48620,
+        "columns": 4,
+        "memory_mb": 3.93,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "order_details_id": 0,
+            "order_id": 0,
+            "pizza_id": 0,
+            "quantity": 0
+        },
+        "missing_percent": {
+            "order_details_id": 0.0,
+            "order_id": 0.0,
+            "pizza_id": 0.0,
+            "quantity": 0.0
+        },
+        "data_types": {
+            "order_details_id": "int64",
+            "order_id": "int64",
+            "pizza_id": "str",
+            "quantity": "int64"
+        },
+        "unique_values": {
+            "order_details_id": 48620,
+            "order_id": 21350,
+            "pizza_id": 91,
+            "quantity": 4
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "pizza_pizzas": {
+        "rows": 96,
+        "columns": 4,
+        "memory_mb": 0.02,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "pizza_id": 0,
+            "pizza_type_id": 0,
+            "size": 0,
+            "price": 0
+        },
+        "missing_percent": {
+            "pizza_id": 0.0,
+            "pizza_type_id": 0.0,
+            "size": 0.0,
+            "price": 0.0
+        },
+        "data_types": {
+            "pizza_id": "str",
+            "pizza_type_id": "str",
+            "size": "str",
+            "price": "float64"
+        },
+        "unique_values": {
+            "pizza_id": 96,
+            "pizza_type_id": 32,
+            "size": 5,
+            "price": 27
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "pizza_types": {
+        "rows": 32,
+        "columns": 4,
+        "memory_mb": 0.01,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "pizza_type_id": 0,
+            "name": 0,
+            "category": 0,
+            "ingredients": 0
+        },
+        "missing_percent": {
+            "pizza_type_id": 0.0,
+            "name": 0.0,
+            "category": 0.0,
+            "ingredients": 0.0
+        },
+        "data_types": {
+            "pizza_type_id": "str",
+            "name": "str",
+            "category": "str",
+            "ingredients": "str"
+        },
+        "unique_values": {
+            "pizza_type_id": 32,
+            "name": 32,
+            "category": 4,
+            "ingredients": 32
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "coffee_orders": {
+        "rows": 521,
+        "columns": 7,
+        "memory_mb": 0.15,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "row_id": 0,
+            "order_id": 0,
+            "created_at": 0,
+            "item_id": 0,
+            "quantity": 0,
+            "cust_name": 0,
+            "in_or_out": 32
+        },
+        "missing_percent": {
+            "row_id": 0.0,
+            "order_id": 0.0,
+            "created_at": 0.0,
+            "item_id": 0.0,
+            "quantity": 0.0,
+            "cust_name": 0.0,
+            "in_or_out": 6.14
+        },
+        "data_types": {
+            "row_id": "int64",
+            "order_id": "str",
+            "created_at": "str",
+            "item_id": "str",
+            "quantity": "int64",
+            "cust_name": "str",
+            "in_or_out": "str"
+        },
+        "unique_values": {
+            "row_id": 521,
+            "order_id": 430,
+            "created_at": 439,
+            "item_id": 29,
+            "quantity": 1,
+            "cust_name": 149,
+            "in_or_out": 3
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 99.68
+    },
+    "coffee_inventory": {
+        "rows": 18,
+        "columns": 3,
+        "memory_mb": 0.0,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "inv_id": 0,
+            "ing_id": 0,
+            "quantity": 0
+        },
+        "missing_percent": {
+            "inv_id": 0.0,
+            "ing_id": 0.0,
+            "quantity": 0.0
+        },
+        "data_types": {
+            "inv_id": "str",
+            "ing_id": "str",
+            "quantity": "int64"
+        },
+        "unique_values": {
+            "inv_id": 18,
+            "ing_id": 18,
+            "quantity": 9
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "coffee_items": {
+        "rows": 24,
+        "columns": 6,
+        "memory_mb": 0.01,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "item_id": 0,
+            "sku": 0,
+            "item_name": 0,
+            "item_cat": 0,
+            "item_size": 4,
+            "item_price": 0
+        },
+        "missing_percent": {
+            "item_id": 0.0,
+            "sku": 0.0,
+            "item_name": 0.0,
+            "item_cat": 0.0,
+            "item_size": 16.67,
+            "item_price": 0.0
+        },
+        "data_types": {
+            "item_id": "str",
+            "sku": "str",
+            "item_name": "str",
+            "item_cat": "str",
+            "item_size": "str",
+            "item_price": "float64"
+        },
+        "unique_values": {
+            "item_id": 24,
+            "sku": 24,
+            "item_name": 14,
+            "item_cat": 3,
+            "item_size": 2,
+            "item_price": 14
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 99.96
+    },
+    "coffee_recipe": {
+        "rows": 61,
+        "columns": 4,
+        "memory_mb": 0.01,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "row_id": 0,
+            "recipe_id": 0,
+            "ing_id": 0,
+            "quantity": 0
+        },
+        "missing_percent": {
+            "row_id": 0.0,
+            "recipe_id": 0.0,
+            "ing_id": 0.0,
+            "quantity": 0.0
+        },
+        "data_types": {
+            "row_id": "int64",
+            "recipe_id": "str",
+            "ing_id": "str",
+            "quantity": "int64"
+        },
+        "unique_values": {
+            "row_id": 61,
+            "recipe_id": 24,
+            "ing_id": 16,
+            "quantity": 14
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "coffee_ingredients": {
+        "rows": 18,
+        "columns": 5,
+        "memory_mb": 0.0,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "ing_id": 0,
+            "ing_name": 0,
+            "ing_weight": 0,
+            "ing_meas": 0,
+            "ing_price": 0
+        },
+        "missing_percent": {
+            "ing_id": 0.0,
+            "ing_name": 0.0,
+            "ing_weight": 0.0,
+            "ing_meas": 0.0,
+            "ing_price": 0.0
+        },
+        "data_types": {
+            "ing_id": "str",
+            "ing_name": "str",
+            "ing_weight": "int64",
+            "ing_meas": "str",
+            "ing_price": "float64"
+        },
+        "unique_values": {
+            "ing_id": 18,
+            "ing_name": 18,
+            "ing_weight": 6,
+            "ing_meas": 3,
+            "ing_price": 14
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "consumer_ratings": {
+        "rows": 1161,
+        "columns": 5,
+        "memory_mb": 0.1,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "userID": 0,
+            "placeID": 0,
+            "rating": 0,
+            "food_rating": 0,
+            "service_rating": 0
+        },
+        "missing_percent": {
+            "userID": 0.0,
+            "placeID": 0.0,
+            "rating": 0.0,
+            "food_rating": 0.0,
+            "service_rating": 0.0
+        },
+        "data_types": {
+            "userID": "str",
+            "placeID": "int64",
+            "rating": "int64",
+            "food_rating": "int64",
+            "service_rating": "int64"
+        },
+        "unique_values": {
+            "userID": 138,
+            "placeID": 130,
+            "rating": 3,
+            "food_rating": 3,
+            "service_rating": 3
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "consumer_profile": {
+        "rows": 138,
+        "columns": 19,
+        "memory_mb": 0.11,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "userID": 0,
+            "latitude": 0,
+            "longitude": 0,
+            "smoker": 0,
+            "drink_level": 0,
+            "dress_preference": 0,
+            "ambience": 0,
+            "transport": 0,
+            "marital_status": 0,
+            "hijos": 0,
+            "birth_year": 0,
+            "interest": 0,
+            "personality": 0,
+            "religion": 0,
+            "activity": 0,
+            "color": 0,
+            "weight": 0,
+            "budget": 0,
+            "height": 0
+        },
+        "missing_percent": {
+            "userID": 0.0,
+            "latitude": 0.0,
+            "longitude": 0.0,
+            "smoker": 0.0,
+            "drink_level": 0.0,
+            "dress_preference": 0.0,
+            "ambience": 0.0,
+            "transport": 0.0,
+            "marital_status": 0.0,
+            "hijos": 0.0,
+            "birth_year": 0.0,
+            "interest": 0.0,
+            "personality": 0.0,
+            "religion": 0.0,
+            "activity": 0.0,
+            "color": 0.0,
+            "weight": 0.0,
+            "budget": 0.0,
+            "height": 0.0
+        },
+        "data_types": {
+            "userID": "str",
+            "latitude": "float64",
+            "longitude": "float64",
+            "smoker": "str",
+            "drink_level": "str",
+            "dress_preference": "str",
+            "ambience": "str",
+            "transport": "str",
+            "marital_status": "str",
+            "hijos": "str",
+            "birth_year": "int64",
+            "interest": "str",
+            "personality": "str",
+            "religion": "str",
+            "activity": "str",
+            "color": "str",
+            "weight": "int64",
+            "budget": "str",
+            "height": "float64"
+        },
+        "unique_values": {
+            "userID": 138,
+            "latitude": 128,
+            "longitude": 126,
+            "smoker": 3,
+            "drink_level": 3,
+            "dress_preference": 5,
+            "ambience": 4,
+            "transport": 4,
+            "marital_status": 4,
+            "hijos": 4,
+            "birth_year": 21,
+            "interest": 5,
+            "personality": 4,
+            "religion": 5,
+            "activity": 5,
+            "color": 8,
+            "weight": 49,
+            "budget": 4,
+            "height": 38
+        },
+        "empty_columns": [],
+        "negative_values": {
+            "longitude": 138
+        },
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "consumer_places": {
+        "rows": 130,
+        "columns": 21,
+        "memory_mb": 0.14,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "placeID": 0,
+            "latitude": 0,
+            "longitude": 0,
+            "the_geom_meter": 0,
+            "name": 0,
+            "address": 0,
+            "city": 0,
+            "state": 0,
+            "country": 0,
+            "fax": 0,
+            "zip": 0,
+            "alcohol": 0,
+            "smoking_area": 0,
+            "dress_code": 0,
+            "accessibility": 0,
+            "price": 0,
+            "url": 0,
+            "Rambience": 0,
+            "franchise": 0,
+            "area": 0,
+            "other_services": 0
+        },
+        "missing_percent": {
+            "placeID": 0.0,
+            "latitude": 0.0,
+            "longitude": 0.0,
+            "the_geom_meter": 0.0,
+            "name": 0.0,
+            "address": 0.0,
+            "city": 0.0,
+            "state": 0.0,
+            "country": 0.0,
+            "fax": 0.0,
+            "zip": 0.0,
+            "alcohol": 0.0,
+            "smoking_area": 0.0,
+            "dress_code": 0.0,
+            "accessibility": 0.0,
+            "price": 0.0,
+            "url": 0.0,
+            "Rambience": 0.0,
+            "franchise": 0.0,
+            "area": 0.0,
+            "other_services": 0.0
+        },
+        "data_types": {
+            "placeID": "int64",
+            "latitude": "float64",
+            "longitude": "float64",
+            "the_geom_meter": "str",
+            "name": "str",
+            "address": "str",
+            "city": "str",
+            "state": "str",
+            "country": "str",
+            "fax": "str",
+            "zip": "str",
+            "alcohol": "str",
+            "smoking_area": "str",
+            "dress_code": "str",
+            "accessibility": "str",
+            "price": "str",
+            "url": "str",
+            "Rambience": "str",
+            "franchise": "str",
+            "area": "str",
+            "other_services": "str"
+        },
+        "unique_values": {
+            "placeID": 130,
+            "latitude": 129,
+            "longitude": 129,
+            "the_geom_meter": 130,
+            "name": 129,
+            "address": 100,
+            "city": 17,
+            "state": 13,
+            "country": 3,
+            "fax": 1,
+            "zip": 35,
+            "alcohol": 3,
+            "smoking_area": 5,
+            "dress_code": 3,
+            "accessibility": 3,
+            "price": 3,
+            "url": 14,
+            "Rambience": 2,
+            "franchise": 2,
+            "area": 2,
+            "other_services": 3
+        },
+        "empty_columns": [],
+        "negative_values": {
+            "longitude": 130
+        },
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "consumer_cuisine": {
+        "rows": 330,
+        "columns": 2,
+        "memory_mb": 0.04,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "userID": 0,
+            "Rcuisine": 0
+        },
+        "missing_percent": {
+            "userID": 0.0,
+            "Rcuisine": 0.0
+        },
+        "data_types": {
+            "userID": "str",
+            "Rcuisine": "str"
+        },
+        "unique_values": {
+            "userID": 138,
+            "Rcuisine": 103
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [],
+        "quality_score": 100.0
+    },
+    "restaurant_orders": {
+        "rows": 550,
+        "columns": 16,
+        "memory_mb": 0.37,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "OrderID": 0,
+            "CustomerID": 0,
+            "CustomerName": 0,
+            "OrderDate": 0,
+            "RestaurantType": 0,
+            "MenuCategory": 0,
+            "ItemName": 0,
+            "Quantity": 0,
+            "UnitPrice": 0,
+            "TotalPrice": 0,
+            "PaymentMethod": 0,
+            "ServerName": 0,
+            "TableNumber": 0,
+            "DayOfWeek": 0,
+            "TimeOfDay": 0,
+            "SpecialRequest": 64
+        },
+        "missing_percent": {
+            "OrderID": 0.0,
+            "CustomerID": 0.0,
+            "CustomerName": 0.0,
+            "OrderDate": 0.0,
+            "RestaurantType": 0.0,
+            "MenuCategory": 0.0,
+            "ItemName": 0.0,
+            "Quantity": 0.0,
+            "UnitPrice": 0.0,
+            "TotalPrice": 0.0,
+            "PaymentMethod": 0.0,
+            "ServerName": 0.0,
+            "TableNumber": 0.0,
+            "DayOfWeek": 0.0,
+            "TimeOfDay": 0.0,
+            "SpecialRequest": 11.64
+        },
+        "data_types": {
+            "OrderID": "int64",
+            "CustomerID": "str",
+            "CustomerName": "str",
+            "OrderDate": "str",
+            "RestaurantType": "str",
+            "MenuCategory": "str",
+            "ItemName": "str",
+            "Quantity": "int64",
+            "UnitPrice": "float64",
+            "TotalPrice": "float64",
+            "PaymentMethod": "str",
+            "ServerName": "str",
+            "TableNumber": "str",
+            "DayOfWeek": "str",
+            "TimeOfDay": "str",
+            "SpecialRequest": "str"
+        },
+        "unique_values": {
+            "OrderID": 550,
+            "CustomerID": 418,
+            "CustomerName": 546,
+            "OrderDate": 544,
+            "RestaurantType": 3,
+            "MenuCategory": 2,
+            "ItemName": 14,
+            "Quantity": 3,
+            "UnitPrice": 478,
+            "TotalPrice": 504,
+            "PaymentMethod": 3,
+            "ServerName": 6,
+            "TableNumber": 21,
+            "DayOfWeek": 7,
+            "TimeOfDay": 4,
+            "SpecialRequest": 8
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [
+            "OrderDate"
+        ],
+        "quality_score": 99.36
+    },
+    "restaurant_sales": {
+        "rows": 17534,
+        "columns": 9,
+        "memory_mb": 6.21,
+        "duplicate_rows": 0,
+        "missing_values": {
+            "Order ID": 0,
+            "Customer ID": 0,
+            "Category": 0,
+            "Item": 1758,
+            "Price": 876,
+            "Quantity": 430,
+            "Order Total": 430,
+            "Order Date": 0,
+            "Payment Method": 1082
+        },
+        "missing_percent": {
+            "Order ID": 0.0,
+            "Customer ID": 0.0,
+            "Category": 0.0,
+            "Item": 10.03,
+            "Price": 5.0,
+            "Quantity": 2.45,
+            "Order Total": 2.45,
+            "Order Date": 0.0,
+            "Payment Method": 6.17
+        },
+        "data_types": {
+            "Order ID": "str",
+            "Customer ID": "str",
+            "Category": "str",
+            "Item": "str",
+            "Price": "float64",
+            "Quantity": "float64",
+            "Order Total": "float64",
+            "Order Date": "str",
+            "Payment Method": "str"
+        },
+        "unique_values": {
+            "Order ID": 17534,
+            "Customer ID": 100,
+            "Category": 5,
+            "Item": 26,
+            "Price": 14,
+            "Quantity": 5,
+            "Order Total": 41,
+            "Order Date": 730,
+            "Payment Method": 3
+        },
+        "empty_columns": [],
+        "negative_values": {},
+        "date_columns": [
+            "Order Date"
+        ],
+        "quality_score": 54.24
+    }
+}

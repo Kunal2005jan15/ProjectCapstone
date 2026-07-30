@@ -1,0 +1,636 @@
+2026-07-29 20:31:18,275 | INFO | Loading app/data/raw/pizza/orders.csv
+2026-07-29 20:31:18,365 | INFO | Rows: 21350
+2026-07-29 20:56:46,701 | INFO | Loading app\data\raw\pizza\orders.csv
+2026-07-29 20:56:46,800 | INFO | pizza_orders: 21350 rows × 3 columns
+2026-07-29 20:56:46,803 | INFO | Loading app\data\raw\pizza\order_details.csv
+2026-07-29 20:56:46,964 | INFO | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 20:56:46,965 | INFO | Loading app\data\raw\pizza\pizzas.csv
+2026-07-29 20:56:46,967 | INFO | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 20:56:46,968 | INFO | Loading app\data\raw\pizza\pizza_types.csv
+2026-07-29 20:59:14,517 | INFO | 
+Starting dataset loading...
+
+2026-07-29 20:59:14,518 | INFO | ============================================================
+2026-07-29 20:59:14,518 | INFO | Loading dataset: pizza_orders
+2026-07-29 20:59:14,518 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 20:59:14,519 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,558 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,558 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 20:59:14,559 | INFO | ============================================================
+2026-07-29 20:59:14,559 | INFO | Loading dataset: pizza_order_details
+2026-07-29 20:59:14,560 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 20:59:14,560 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,639 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,640 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 20:59:14,640 | INFO | ============================================================
+2026-07-29 20:59:14,640 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 20:59:14,641 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 20:59:14,641 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,643 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,644 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 20:59:14,644 | INFO | ============================================================
+2026-07-29 20:59:14,644 | INFO | Loading dataset: pizza_types
+2026-07-29 20:59:14,645 | INFO | Location: app\data\raw\pizza\pizza_types.csv
+2026-07-29 20:59:14,646 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,648 | WARNING | Encoding utf-8 failed.
+2026-07-29 20:59:14,649 | INFO | Trying encoding: utf-8-sig
+2026-07-29 20:59:14,695 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 20:59:14,695 | INFO | Trying encoding: cp1252
+2026-07-29 20:59:14,698 | INFO | Loaded using cp1252
+2026-07-29 20:59:14,698 | INFO | SUCCESS | pizza_types: 32 rows × 4 columns
+2026-07-29 20:59:14,698 | INFO | ============================================================
+2026-07-29 20:59:14,699 | INFO | Loading dataset: coffee_orders
+2026-07-29 20:59:14,699 | INFO | Location: app\data\raw\coffee\orders.csv
+2026-07-29 20:59:14,700 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,711 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,711 | INFO | SUCCESS | coffee_orders: 521 rows × 7 columns
+2026-07-29 20:59:14,712 | INFO | ============================================================
+2026-07-29 20:59:14,712 | INFO | Loading dataset: coffee_inventory
+2026-07-29 20:59:14,712 | INFO | Location: app\data\raw\coffee\inventory.csv
+2026-07-29 20:59:14,713 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,715 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,715 | INFO | SUCCESS | coffee_inventory: 18 rows × 3 columns
+2026-07-29 20:59:14,716 | INFO | ============================================================
+2026-07-29 20:59:14,716 | INFO | Loading dataset: coffee_items
+2026-07-29 20:59:14,717 | INFO | Location: app\data\raw\coffee\items.csv
+2026-07-29 20:59:14,717 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,720 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,721 | INFO | SUCCESS | coffee_items: 24 rows × 6 columns
+2026-07-29 20:59:14,721 | INFO | ============================================================
+2026-07-29 20:59:14,721 | INFO | Loading dataset: coffee_recipe
+2026-07-29 20:59:14,722 | INFO | Location: app\data\raw\coffee\recipe.csv
+2026-07-29 20:59:14,724 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,728 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,728 | INFO | SUCCESS | coffee_recipe: 61 rows × 4 columns
+2026-07-29 20:59:14,728 | INFO | ============================================================
+2026-07-29 20:59:14,729 | INFO | Loading dataset: coffee_ingredients
+2026-07-29 20:59:14,729 | INFO | Location: app\data\raw\coffee\ingredients.csv
+2026-07-29 20:59:14,730 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,732 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,732 | INFO | SUCCESS | coffee_ingredients: 18 rows × 5 columns
+2026-07-29 20:59:14,732 | INFO | ============================================================
+2026-07-29 20:59:14,733 | INFO | Loading dataset: consumer_ratings
+2026-07-29 20:59:14,733 | INFO | Location: app\data\raw\consumer\rating_final.csv
+2026-07-29 20:59:14,733 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,738 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,741 | INFO | SUCCESS | consumer_ratings: 1161 rows × 5 columns
+2026-07-29 20:59:14,742 | INFO | ============================================================
+2026-07-29 20:59:14,743 | INFO | Loading dataset: consumer_profile
+2026-07-29 20:59:14,744 | INFO | Location: app\data\raw\consumer\userprofile.csv
+2026-07-29 20:59:14,744 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,750 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,750 | INFO | SUCCESS | consumer_profile: 138 rows × 19 columns
+2026-07-29 20:59:14,751 | INFO | ============================================================
+2026-07-29 20:59:14,751 | INFO | Loading dataset: consumer_places
+2026-07-29 20:59:14,751 | INFO | Location: app\data\raw\consumer\geoplaces2.csv
+2026-07-29 20:59:14,752 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,755 | WARNING | Encoding utf-8 failed.
+2026-07-29 20:59:14,756 | INFO | Trying encoding: utf-8-sig
+2026-07-29 20:59:14,758 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 20:59:14,761 | INFO | Trying encoding: cp1252
+2026-07-29 20:59:14,768 | INFO | Loaded using cp1252
+2026-07-29 20:59:14,768 | INFO | SUCCESS | consumer_places: 130 rows × 21 columns
+2026-07-29 20:59:14,769 | INFO | ============================================================
+2026-07-29 20:59:14,769 | INFO | Loading dataset: consumer_cuisine
+2026-07-29 20:59:14,770 | INFO | Location: app\data\raw\consumer\usercuisine.csv
+2026-07-29 20:59:14,771 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,778 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,779 | INFO | SUCCESS | consumer_cuisine: 330 rows × 2 columns
+2026-07-29 20:59:14,780 | INFO | ============================================================
+2026-07-29 20:59:14,780 | INFO | Loading dataset: restaurant_orders
+2026-07-29 20:59:14,780 | INFO | Location: app\data\raw\restaurant_orders\hotel_restaurant_orders.csv
+2026-07-29 20:59:14,781 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,795 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,795 | INFO | SUCCESS | restaurant_orders: 550 rows × 16 columns
+2026-07-29 20:59:14,795 | INFO | ============================================================
+2026-07-29 20:59:14,796 | INFO | Loading dataset: restaurant_sales
+2026-07-29 20:59:14,796 | INFO | Location: app\data\raw\restaurant_sales\restaurant_sales_data.csv
+2026-07-29 20:59:14,796 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:14,853 | INFO | Loaded using utf-8
+2026-07-29 20:59:14,853 | INFO | SUCCESS | restaurant_sales: 17534 rows × 9 columns
+2026-07-29 20:59:14,854 | INFO | 
+All datasets loaded successfully.
+
+2026-07-29 20:59:32,233 | INFO | 
+Starting dataset loading...
+
+2026-07-29 20:59:32,233 | INFO | ============================================================
+2026-07-29 20:59:32,234 | INFO | Loading dataset: pizza_orders
+2026-07-29 20:59:32,234 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 20:59:32,235 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,280 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,281 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 20:59:32,281 | INFO | ============================================================
+2026-07-29 20:59:32,281 | INFO | Loading dataset: pizza_order_details
+2026-07-29 20:59:32,282 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 20:59:32,282 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,376 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,377 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 20:59:32,377 | INFO | ============================================================
+2026-07-29 20:59:32,378 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 20:59:32,378 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 20:59:32,378 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,381 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,382 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 20:59:32,382 | INFO | ============================================================
+2026-07-29 20:59:32,383 | INFO | Loading dataset: pizza_types
+2026-07-29 20:59:32,384 | INFO | Location: app\data\raw\pizza\pizza_types.csv
+2026-07-29 20:59:32,384 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,387 | WARNING | Encoding utf-8 failed.
+2026-07-29 20:59:32,387 | INFO | Trying encoding: utf-8-sig
+2026-07-29 20:59:32,399 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 20:59:32,399 | INFO | Trying encoding: cp1252
+2026-07-29 20:59:32,403 | INFO | Loaded using cp1252
+2026-07-29 20:59:32,403 | INFO | SUCCESS | pizza_types: 32 rows × 4 columns
+2026-07-29 20:59:32,404 | INFO | ============================================================
+2026-07-29 20:59:32,404 | INFO | Loading dataset: coffee_orders
+2026-07-29 20:59:32,405 | INFO | Location: app\data\raw\coffee\orders.csv
+2026-07-29 20:59:32,405 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,414 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,415 | INFO | SUCCESS | coffee_orders: 521 rows × 7 columns
+2026-07-29 20:59:32,416 | INFO | ============================================================
+2026-07-29 20:59:32,416 | INFO | Loading dataset: coffee_inventory
+2026-07-29 20:59:32,417 | INFO | Location: app\data\raw\coffee\inventory.csv
+2026-07-29 20:59:32,417 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,420 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,421 | INFO | SUCCESS | coffee_inventory: 18 rows × 3 columns
+2026-07-29 20:59:32,421 | INFO | ============================================================
+2026-07-29 20:59:32,422 | INFO | Loading dataset: coffee_items
+2026-07-29 20:59:32,423 | INFO | Location: app\data\raw\coffee\items.csv
+2026-07-29 20:59:32,424 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,430 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,430 | INFO | SUCCESS | coffee_items: 24 rows × 6 columns
+2026-07-29 20:59:32,430 | INFO | ============================================================
+2026-07-29 20:59:32,432 | INFO | Loading dataset: coffee_recipe
+2026-07-29 20:59:32,433 | INFO | Location: app\data\raw\coffee\recipe.csv
+2026-07-29 20:59:32,433 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,437 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,437 | INFO | SUCCESS | coffee_recipe: 61 rows × 4 columns
+2026-07-29 20:59:32,438 | INFO | ============================================================
+2026-07-29 20:59:32,439 | INFO | Loading dataset: coffee_ingredients
+2026-07-29 20:59:32,440 | INFO | Location: app\data\raw\coffee\ingredients.csv
+2026-07-29 20:59:32,441 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,448 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,449 | INFO | SUCCESS | coffee_ingredients: 18 rows × 5 columns
+2026-07-29 20:59:32,450 | INFO | ============================================================
+2026-07-29 20:59:32,450 | INFO | Loading dataset: consumer_ratings
+2026-07-29 20:59:32,451 | INFO | Location: app\data\raw\consumer\rating_final.csv
+2026-07-29 20:59:32,451 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,457 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,458 | INFO | SUCCESS | consumer_ratings: 1161 rows × 5 columns
+2026-07-29 20:59:32,459 | INFO | ============================================================
+2026-07-29 20:59:32,460 | INFO | Loading dataset: consumer_profile
+2026-07-29 20:59:32,461 | INFO | Location: app\data\raw\consumer\userprofile.csv
+2026-07-29 20:59:32,462 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,467 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,468 | INFO | SUCCESS | consumer_profile: 138 rows × 19 columns
+2026-07-29 20:59:32,468 | INFO | ============================================================
+2026-07-29 20:59:32,469 | INFO | Loading dataset: consumer_places
+2026-07-29 20:59:32,469 | INFO | Location: app\data\raw\consumer\geoplaces2.csv
+2026-07-29 20:59:32,470 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,473 | WARNING | Encoding utf-8 failed.
+2026-07-29 20:59:32,474 | INFO | Trying encoding: utf-8-sig
+2026-07-29 20:59:32,476 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 20:59:32,479 | INFO | Trying encoding: cp1252
+2026-07-29 20:59:32,486 | INFO | Loaded using cp1252
+2026-07-29 20:59:32,487 | INFO | SUCCESS | consumer_places: 130 rows × 21 columns
+2026-07-29 20:59:32,487 | INFO | ============================================================
+2026-07-29 20:59:32,487 | INFO | Loading dataset: consumer_cuisine
+2026-07-29 20:59:32,488 | INFO | Location: app\data\raw\consumer\usercuisine.csv
+2026-07-29 20:59:32,488 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,492 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,493 | INFO | SUCCESS | consumer_cuisine: 330 rows × 2 columns
+2026-07-29 20:59:32,495 | INFO | ============================================================
+2026-07-29 20:59:32,496 | INFO | Loading dataset: restaurant_orders
+2026-07-29 20:59:32,496 | INFO | Location: app\data\raw\restaurant_orders\hotel_restaurant_orders.csv
+2026-07-29 20:59:32,497 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,505 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,506 | INFO | SUCCESS | restaurant_orders: 550 rows × 16 columns
+2026-07-29 20:59:32,506 | INFO | ============================================================
+2026-07-29 20:59:32,511 | INFO | Loading dataset: restaurant_sales
+2026-07-29 20:59:32,512 | INFO | Location: app\data\raw\restaurant_sales\restaurant_sales_data.csv
+2026-07-29 20:59:32,513 | INFO | Trying encoding: utf-8
+2026-07-29 20:59:32,580 | INFO | Loaded using utf-8
+2026-07-29 20:59:32,580 | INFO | SUCCESS | restaurant_sales: 17534 rows × 9 columns
+2026-07-29 20:59:32,581 | INFO | 
+All datasets loaded successfully.
+
+2026-07-29 20:59:32,581 | INFO | Validating pizza_orders
+2026-07-29 20:59:32,658 | INFO | Validating pizza_order_details
+2026-07-29 20:59:32,733 | INFO | Validating pizza_pizzas
+2026-07-29 20:59:32,739 | INFO | Validating pizza_types
+2026-07-29 20:59:32,748 | INFO | Validating coffee_orders
+2026-07-29 20:59:32,762 | INFO | Validating coffee_inventory
+2026-07-29 20:59:32,768 | INFO | Validating coffee_items
+2026-07-29 20:59:32,778 | INFO | Validating coffee_recipe
+2026-07-29 20:59:32,784 | INFO | Validating coffee_ingredients
+2026-07-29 20:59:32,794 | INFO | Validating consumer_ratings
+2026-07-29 20:59:32,801 | INFO | Validating consumer_profile
+2026-07-29 20:59:32,823 | INFO | Validating consumer_places
+2026-07-29 20:59:32,846 | INFO | Validating consumer_cuisine
+2026-07-29 20:59:32,851 | INFO | Validating restaurant_orders
+2026-07-29 20:59:32,878 | INFO | Validating restaurant_sales
+2026-07-29 20:59:33,016 | INFO | Validation report generated.
+2026-07-29 21:32:05,615 | INFO | 
+Starting dataset loading...
+
+2026-07-29 21:32:05,615 | INFO | ============================================================
+2026-07-29 21:32:05,616 | INFO | Loading dataset: pizza_orders
+2026-07-29 21:32:05,616 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 21:32:05,616 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,651 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,652 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 21:32:05,652 | INFO | ============================================================
+2026-07-29 21:32:05,652 | INFO | Loading dataset: pizza_order_details
+2026-07-29 21:32:05,653 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 21:32:05,653 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,726 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,726 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 21:32:05,727 | INFO | ============================================================
+2026-07-29 21:32:05,727 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 21:32:05,727 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 21:32:05,728 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,731 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,731 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 21:32:05,731 | INFO | ============================================================
+2026-07-29 21:32:05,732 | INFO | Loading dataset: pizza_types
+2026-07-29 21:32:05,732 | INFO | Location: app\data\raw\pizza\pizza_types.csv
+2026-07-29 21:32:05,733 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,735 | WARNING | Encoding utf-8 failed.
+2026-07-29 21:32:05,735 | INFO | Trying encoding: utf-8-sig
+2026-07-29 21:32:05,746 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 21:32:05,747 | INFO | Trying encoding: cp1252
+2026-07-29 21:32:05,750 | INFO | Loaded using cp1252
+2026-07-29 21:32:05,750 | INFO | SUCCESS | pizza_types: 32 rows × 4 columns
+2026-07-29 21:32:05,751 | INFO | ============================================================
+2026-07-29 21:32:05,751 | INFO | Loading dataset: coffee_orders
+2026-07-29 21:32:05,751 | INFO | Location: app\data\raw\coffee\orders.csv
+2026-07-29 21:32:05,752 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,763 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,763 | INFO | SUCCESS | coffee_orders: 521 rows × 7 columns
+2026-07-29 21:32:05,764 | INFO | ============================================================
+2026-07-29 21:32:05,764 | INFO | Loading dataset: coffee_inventory
+2026-07-29 21:32:05,764 | INFO | Location: app\data\raw\coffee\inventory.csv
+2026-07-29 21:32:05,765 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,768 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,768 | INFO | SUCCESS | coffee_inventory: 18 rows × 3 columns
+2026-07-29 21:32:05,769 | INFO | ============================================================
+2026-07-29 21:32:05,769 | INFO | Loading dataset: coffee_items
+2026-07-29 21:32:05,770 | INFO | Location: app\data\raw\coffee\items.csv
+2026-07-29 21:32:05,770 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,772 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,773 | INFO | SUCCESS | coffee_items: 24 rows × 6 columns
+2026-07-29 21:32:05,774 | INFO | ============================================================
+2026-07-29 21:32:05,776 | INFO | Loading dataset: coffee_recipe
+2026-07-29 21:32:05,778 | INFO | Location: app\data\raw\coffee\recipe.csv
+2026-07-29 21:32:05,778 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,781 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,781 | INFO | SUCCESS | coffee_recipe: 61 rows × 4 columns
+2026-07-29 21:32:05,782 | INFO | ============================================================
+2026-07-29 21:32:05,782 | INFO | Loading dataset: coffee_ingredients
+2026-07-29 21:32:05,783 | INFO | Location: app\data\raw\coffee\ingredients.csv
+2026-07-29 21:32:05,783 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,786 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,786 | INFO | SUCCESS | coffee_ingredients: 18 rows × 5 columns
+2026-07-29 21:32:05,786 | INFO | ============================================================
+2026-07-29 21:32:05,787 | INFO | Loading dataset: consumer_ratings
+2026-07-29 21:32:05,787 | INFO | Location: app\data\raw\consumer\rating_final.csv
+2026-07-29 21:32:05,787 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,796 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,796 | INFO | SUCCESS | consumer_ratings: 1161 rows × 5 columns
+2026-07-29 21:32:05,797 | INFO | ============================================================
+2026-07-29 21:32:05,797 | INFO | Loading dataset: consumer_profile
+2026-07-29 21:32:05,798 | INFO | Location: app\data\raw\consumer\userprofile.csv
+2026-07-29 21:32:05,799 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,804 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,804 | INFO | SUCCESS | consumer_profile: 138 rows × 19 columns
+2026-07-29 21:32:05,812 | INFO | ============================================================
+2026-07-29 21:32:05,813 | INFO | Loading dataset: consumer_places
+2026-07-29 21:32:05,815 | INFO | Location: app\data\raw\consumer\geoplaces2.csv
+2026-07-29 21:32:05,815 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,819 | WARNING | Encoding utf-8 failed.
+2026-07-29 21:32:05,819 | INFO | Trying encoding: utf-8-sig
+2026-07-29 21:32:05,821 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 21:32:05,822 | INFO | Trying encoding: cp1252
+2026-07-29 21:32:05,831 | INFO | Loaded using cp1252
+2026-07-29 21:32:05,831 | INFO | SUCCESS | consumer_places: 130 rows × 21 columns
+2026-07-29 21:32:05,832 | INFO | ============================================================
+2026-07-29 21:32:05,832 | INFO | Loading dataset: consumer_cuisine
+2026-07-29 21:32:05,833 | INFO | Location: app\data\raw\consumer\usercuisine.csv
+2026-07-29 21:32:05,833 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,836 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,836 | INFO | SUCCESS | consumer_cuisine: 330 rows × 2 columns
+2026-07-29 21:32:05,836 | INFO | ============================================================
+2026-07-29 21:32:05,837 | INFO | Loading dataset: restaurant_orders
+2026-07-29 21:32:05,838 | INFO | Location: app\data\raw\restaurant_orders\hotel_restaurant_orders.csv
+2026-07-29 21:32:05,838 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,847 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,848 | INFO | SUCCESS | restaurant_orders: 550 rows × 16 columns
+2026-07-29 21:32:05,848 | INFO | ============================================================
+2026-07-29 21:32:05,849 | INFO | Loading dataset: restaurant_sales
+2026-07-29 21:32:05,849 | INFO | Location: app\data\raw\restaurant_sales\restaurant_sales_data.csv
+2026-07-29 21:32:05,850 | INFO | Trying encoding: utf-8
+2026-07-29 21:32:05,919 | INFO | Loaded using utf-8
+2026-07-29 21:32:05,920 | INFO | SUCCESS | restaurant_sales: 17534 rows × 9 columns
+2026-07-29 21:32:05,920 | INFO | 
+All datasets loaded successfully.
+
+2026-07-29 21:32:05,921 | INFO | Cleaning pizza_orders
+2026-07-29 21:32:05,985 | INFO | Saved pizza_orders.csv
+2026-07-29 21:32:05,985 | INFO | Cleaning pizza_order_details
+2026-07-29 21:32:06,174 | INFO | Saved pizza_order_details.csv
+2026-07-29 21:32:06,174 | INFO | Cleaning pizza_pizzas
+2026-07-29 21:32:06,183 | INFO | Saved pizza_pizzas.csv
+2026-07-29 21:32:06,184 | INFO | Cleaning pizza_types
+2026-07-29 21:32:06,196 | INFO | Saved pizza_types.csv
+2026-07-29 21:32:06,197 | INFO | Cleaning coffee_orders
+2026-07-29 21:32:06,212 | INFO | Saved coffee_orders.csv
+2026-07-29 21:32:06,213 | INFO | Cleaning coffee_inventory
+2026-07-29 21:32:06,219 | INFO | Saved coffee_inventory.csv
+2026-07-29 21:32:06,220 | INFO | Cleaning coffee_items
+2026-07-29 21:32:06,232 | INFO | Saved coffee_items.csv
+2026-07-29 21:32:06,233 | INFO | Cleaning coffee_recipe
+2026-07-29 21:32:06,241 | INFO | Saved coffee_recipe.csv
+2026-07-29 21:32:06,242 | INFO | Cleaning coffee_ingredients
+2026-07-29 21:32:06,254 | INFO | Saved coffee_ingredients.csv
+2026-07-29 21:32:06,254 | INFO | Cleaning consumer_ratings
+2026-07-29 21:32:06,272 | INFO | Saved consumer_ratings.csv
+2026-07-29 21:32:06,272 | INFO | Cleaning consumer_profile
+2026-07-29 21:32:06,297 | INFO | Saved consumer_profile.csv
+2026-07-29 21:32:06,298 | INFO | Cleaning consumer_places
+2026-07-29 21:32:06,318 | INFO | Saved consumer_places.csv
+2026-07-29 21:32:06,318 | INFO | Cleaning consumer_cuisine
+2026-07-29 21:32:06,328 | INFO | Saved consumer_cuisine.csv
+2026-07-29 21:32:06,331 | INFO | Cleaning restaurant_orders
+2026-07-29 21:32:06,367 | INFO | Saved restaurant_orders.csv
+2026-07-29 21:32:06,367 | INFO | Cleaning restaurant_sales
+2026-07-29 21:32:06,574 | INFO | Saved restaurant_sales.csv
+2026-07-29 22:21:40,517 | INFO | 
+Starting dataset loading...
+
+2026-07-29 22:21:40,520 | INFO | ============================================================
+2026-07-29 22:21:40,520 | INFO | Loading dataset: pizza_orders
+2026-07-29 22:21:40,520 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 22:21:40,521 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,586 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,587 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 22:21:40,587 | INFO | ============================================================
+2026-07-29 22:21:40,588 | INFO | Loading dataset: pizza_order_details
+2026-07-29 22:21:40,589 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 22:21:40,589 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,681 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,681 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 22:21:40,681 | INFO | ============================================================
+2026-07-29 22:21:40,682 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 22:21:40,682 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 22:21:40,682 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,699 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,699 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 22:21:40,700 | INFO | ============================================================
+2026-07-29 22:21:40,700 | INFO | Loading dataset: pizza_types
+2026-07-29 22:21:40,700 | INFO | Location: app\data\raw\pizza\pizza_types.csv
+2026-07-29 22:21:40,701 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,720 | WARNING | Encoding utf-8 failed.
+2026-07-29 22:21:40,721 | INFO | Trying encoding: utf-8-sig
+2026-07-29 22:21:40,730 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 22:21:40,731 | INFO | Trying encoding: cp1252
+2026-07-29 22:21:40,733 | INFO | Loaded using cp1252
+2026-07-29 22:21:40,733 | INFO | SUCCESS | pizza_types: 32 rows × 4 columns
+2026-07-29 22:21:40,734 | INFO | ============================================================
+2026-07-29 22:21:40,734 | INFO | Loading dataset: coffee_orders
+2026-07-29 22:21:40,734 | INFO | Location: app\data\raw\coffee\orders.csv
+2026-07-29 22:21:40,735 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,764 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,764 | INFO | SUCCESS | coffee_orders: 521 rows × 7 columns
+2026-07-29 22:21:40,764 | INFO | ============================================================
+2026-07-29 22:21:40,765 | INFO | Loading dataset: coffee_inventory
+2026-07-29 22:21:40,765 | INFO | Location: app\data\raw\coffee\inventory.csv
+2026-07-29 22:21:40,765 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,785 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,785 | INFO | SUCCESS | coffee_inventory: 18 rows × 3 columns
+2026-07-29 22:21:40,785 | INFO | ============================================================
+2026-07-29 22:21:40,786 | INFO | Loading dataset: coffee_items
+2026-07-29 22:21:40,786 | INFO | Location: app\data\raw\coffee\items.csv
+2026-07-29 22:21:40,786 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,790 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,791 | INFO | SUCCESS | coffee_items: 24 rows × 6 columns
+2026-07-29 22:21:40,791 | INFO | ============================================================
+2026-07-29 22:21:40,793 | INFO | Loading dataset: coffee_recipe
+2026-07-29 22:21:40,794 | INFO | Location: app\data\raw\coffee\recipe.csv
+2026-07-29 22:21:40,795 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,814 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,814 | INFO | SUCCESS | coffee_recipe: 61 rows × 4 columns
+2026-07-29 22:21:40,815 | INFO | ============================================================
+2026-07-29 22:21:40,815 | INFO | Loading dataset: coffee_ingredients
+2026-07-29 22:21:40,816 | INFO | Location: app\data\raw\coffee\ingredients.csv
+2026-07-29 22:21:40,816 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,820 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,820 | INFO | SUCCESS | coffee_ingredients: 18 rows × 5 columns
+2026-07-29 22:21:40,820 | INFO | ============================================================
+2026-07-29 22:21:40,820 | INFO | Loading dataset: consumer_ratings
+2026-07-29 22:21:40,821 | INFO | Location: app\data\raw\consumer\rating_final.csv
+2026-07-29 22:21:40,821 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,847 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,847 | INFO | SUCCESS | consumer_ratings: 1161 rows × 5 columns
+2026-07-29 22:21:40,847 | INFO | ============================================================
+2026-07-29 22:21:40,848 | INFO | Loading dataset: consumer_profile
+2026-07-29 22:21:40,848 | INFO | Location: app\data\raw\consumer\userprofile.csv
+2026-07-29 22:21:40,848 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,871 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,872 | INFO | SUCCESS | consumer_profile: 138 rows × 19 columns
+2026-07-29 22:21:40,872 | INFO | ============================================================
+2026-07-29 22:21:40,872 | INFO | Loading dataset: consumer_places
+2026-07-29 22:21:40,873 | INFO | Location: app\data\raw\consumer\geoplaces2.csv
+2026-07-29 22:21:40,873 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,894 | WARNING | Encoding utf-8 failed.
+2026-07-29 22:21:40,894 | INFO | Trying encoding: utf-8-sig
+2026-07-29 22:21:40,896 | WARNING | Encoding utf-8-sig failed.
+2026-07-29 22:21:40,896 | INFO | Trying encoding: cp1252
+2026-07-29 22:21:40,902 | INFO | Loaded using cp1252
+2026-07-29 22:21:40,902 | INFO | SUCCESS | consumer_places: 130 rows × 21 columns
+2026-07-29 22:21:40,902 | INFO | ============================================================
+2026-07-29 22:21:40,903 | INFO | Loading dataset: consumer_cuisine
+2026-07-29 22:21:40,903 | INFO | Location: app\data\raw\consumer\usercuisine.csv
+2026-07-29 22:21:40,903 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,923 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,923 | INFO | SUCCESS | consumer_cuisine: 330 rows × 2 columns
+2026-07-29 22:21:40,923 | INFO | ============================================================
+2026-07-29 22:21:40,923 | INFO | Loading dataset: restaurant_orders
+2026-07-29 22:21:40,924 | INFO | Location: app\data\raw\restaurant_orders\hotel_restaurant_orders.csv
+2026-07-29 22:21:40,924 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:40,950 | INFO | Loaded using utf-8
+2026-07-29 22:21:40,950 | INFO | SUCCESS | restaurant_orders: 550 rows × 16 columns
+2026-07-29 22:21:40,951 | INFO | ============================================================
+2026-07-29 22:21:40,951 | INFO | Loading dataset: restaurant_sales
+2026-07-29 22:21:40,951 | INFO | Location: app\data\raw\restaurant_sales\restaurant_sales_data.csv
+2026-07-29 22:21:40,952 | INFO | Trying encoding: utf-8
+2026-07-29 22:21:41,100 | INFO | Loaded using utf-8
+2026-07-29 22:21:41,100 | INFO | SUCCESS | restaurant_sales: 17534 rows × 9 columns
+2026-07-29 22:21:41,101 | INFO | 
+All datasets loaded successfully.
+
+2026-07-29 22:21:41,101 | INFO | Merging datasets...
+2026-07-29 22:21:41,139 | INFO | Creating daily aggregation...
+2026-07-29 22:21:41,191 | INFO | Saved daily_sales.csv
+2026-07-29 22:25:30,107 | INFO | ============================================================
+2026-07-29 22:25:30,107 | INFO | Loading dataset: pizza_orders
+2026-07-29 22:25:30,108 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 22:25:30,109 | INFO | Trying encoding: utf-8
+2026-07-29 22:25:30,141 | INFO | Loaded using utf-8
+2026-07-29 22:25:30,142 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 22:25:30,142 | INFO | ============================================================
+2026-07-29 22:25:30,143 | INFO | Loading dataset: pizza_order_details
+2026-07-29 22:25:30,143 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 22:25:30,143 | INFO | Trying encoding: utf-8
+2026-07-29 22:25:30,208 | INFO | Loaded using utf-8
+2026-07-29 22:25:30,209 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 22:25:30,209 | INFO | ============================================================
+2026-07-29 22:25:30,209 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 22:25:30,210 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 22:25:30,210 | INFO | Trying encoding: utf-8
+2026-07-29 22:25:30,212 | INFO | Loaded using utf-8
+2026-07-29 22:25:30,213 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 22:31:13,548 | INFO | Loading datasets...
+2026-07-29 22:31:13,549 | INFO | ============================================================
+2026-07-29 22:31:13,549 | INFO | Loading dataset: pizza_orders
+2026-07-29 22:31:13,549 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 22:31:13,549 | INFO | Trying encoding: utf-8
+2026-07-29 22:31:13,588 | INFO | Loaded using utf-8
+2026-07-29 22:31:13,589 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 22:31:13,590 | INFO | ============================================================
+2026-07-29 22:31:13,592 | INFO | Loading dataset: pizza_order_details
+2026-07-29 22:31:13,593 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 22:31:13,593 | INFO | Trying encoding: utf-8
+2026-07-29 22:31:13,655 | INFO | Loaded using utf-8
+2026-07-29 22:31:13,655 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 22:31:13,655 | INFO | ============================================================
+2026-07-29 22:31:13,656 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 22:31:13,656 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 22:31:13,656 | INFO | Trying encoding: utf-8
+2026-07-29 22:31:13,659 | INFO | Loaded using utf-8
+2026-07-29 22:31:13,659 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 22:31:13,660 | INFO | Merging datasets...
+2026-07-29 22:31:13,684 | INFO | Creating daily aggregation...
+2026-07-29 22:31:13,729 | INFO | Saved app\data\processed\daily_sales.csv
+2026-07-29 22:36:02,729 | INFO | Loading datasets...
+2026-07-29 22:36:02,730 | INFO | ============================================================
+2026-07-29 22:36:02,730 | INFO | Loading dataset: pizza_orders
+2026-07-29 22:36:02,731 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 22:36:02,731 | INFO | Trying encoding: utf-8
+2026-07-29 22:36:02,767 | INFO | Loaded using utf-8
+2026-07-29 22:36:02,767 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 22:36:02,767 | INFO | ============================================================
+2026-07-29 22:36:02,768 | INFO | Loading dataset: pizza_order_details
+2026-07-29 22:36:02,768 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 22:36:02,768 | INFO | Trying encoding: utf-8
+2026-07-29 22:36:02,832 | INFO | Loaded using utf-8
+2026-07-29 22:36:02,832 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 22:36:02,833 | INFO | ============================================================
+2026-07-29 22:36:02,833 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 22:36:02,834 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 22:36:02,834 | INFO | Trying encoding: utf-8
+2026-07-29 22:36:02,837 | INFO | Loaded using utf-8
+2026-07-29 22:36:02,838 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 22:36:02,838 | INFO | Merging datasets...
+2026-07-29 22:36:02,862 | INFO | Calculating revenue...
+2026-07-29 22:36:02,864 | INFO | Creating daily aggregation...
+2026-07-29 22:36:02,903 | INFO | Saved app\data\processed\daily_sales.csv
+2026-07-29 22:37:32,687 | INFO | Loading datasets...
+2026-07-29 22:37:32,743 | INFO | Merging Sales + Weather
+2026-07-29 22:37:32,749 | INFO | Merging Holidays
+2026-07-29 22:37:32,764 | INFO | Saved app\data\processed\model_ready.csv
+2026-07-29 22:41:04,910 | INFO | Loading datasets...
+2026-07-29 22:41:04,935 | INFO | Merging Sales + Weather
+2026-07-29 22:41:04,939 | INFO | Merging Holidays
+2026-07-29 22:41:04,956 | INFO | Saved app\data\processed\model_ready.csv
+2026-07-29 22:41:18,239 | INFO | Loading datasets...
+2026-07-29 22:41:18,240 | INFO | ============================================================
+2026-07-29 22:41:18,240 | INFO | Loading dataset: pizza_orders
+2026-07-29 22:41:18,241 | INFO | Location: app\data\raw\pizza\orders.csv
+2026-07-29 22:41:18,242 | INFO | Trying encoding: utf-8
+2026-07-29 22:41:18,285 | INFO | Loaded using utf-8
+2026-07-29 22:41:18,285 | INFO | SUCCESS | pizza_orders: 21350 rows × 3 columns
+2026-07-29 22:41:18,286 | INFO | ============================================================
+2026-07-29 22:41:18,286 | INFO | Loading dataset: pizza_order_details
+2026-07-29 22:41:18,286 | INFO | Location: app\data\raw\pizza\order_details.csv
+2026-07-29 22:41:18,287 | INFO | Trying encoding: utf-8
+2026-07-29 22:41:18,357 | INFO | Loaded using utf-8
+2026-07-29 22:41:18,357 | INFO | SUCCESS | pizza_order_details: 48620 rows × 4 columns
+2026-07-29 22:41:18,358 | INFO | ============================================================
+2026-07-29 22:41:18,359 | INFO | Loading dataset: pizza_pizzas
+2026-07-29 22:41:18,359 | INFO | Location: app\data\raw\pizza\pizzas.csv
+2026-07-29 22:41:18,360 | INFO | Trying encoding: utf-8
+2026-07-29 22:41:18,362 | INFO | Loaded using utf-8
+2026-07-29 22:41:18,363 | INFO | SUCCESS | pizza_pizzas: 96 rows × 4 columns
+2026-07-29 22:41:18,364 | INFO | Merging datasets...
+2026-07-29 22:41:18,389 | INFO | Aggregating daily sales...
+2026-07-29 22:41:18,423 | INFO | Creating complete calendar...
+2026-07-29 22:41:18,432 | INFO | Filling missing days...
+2026-07-29 22:41:18,452 | INFO | Saved app\data\processed\daily_sales.csv
+2026-07-29 22:42:17,326 | INFO | Loading datasets...
+2026-07-29 22:42:17,371 | INFO | Merging Sales + Weather
+2026-07-29 22:42:17,374 | INFO | Merging Holidays
+2026-07-29 22:42:17,389 | INFO | Saved app\data\processed\model_ready.csv
+2026-07-29 22:46:53,999 | INFO | Loading model_ready.csv
+2026-07-29 22:46:54,008 | INFO | Creating calendar features...
+2026-07-29 22:46:54,021 | INFO | Creating trend index...
+2026-07-29 22:46:54,022 | INFO | Creating lag features...
+2026-07-29 22:46:54,024 | INFO | Creating rolling statistics...
+2026-07-29 22:46:54,033 | INFO | Creating weather flags...
+2026-07-29 22:46:54,035 | INFO | Creating season feature...
+2026-07-29 22:46:54,037 | INFO | Holiday distance features...
+2026-07-29 22:46:54,371 | INFO | Dropping rows created by lag features...
+2026-07-29 22:46:54,385 | INFO | Saved app\data\processed\model_features.csv
+2026-07-29 22:50:29,584 | INFO | Loading model_ready.csv
+2026-07-29 22:50:29,593 | INFO | Creating calendar features...
+2026-07-29 22:50:29,606 | INFO | Creating trend index...
+2026-07-29 22:50:29,607 | INFO | Creating lag features...
+2026-07-29 22:50:29,611 | INFO | Creating rolling statistics...
+2026-07-29 22:50:29,616 | INFO | Creating weather flags...
+2026-07-29 22:50:29,618 | INFO | Creating season feature...
+2026-07-29 22:50:29,619 | INFO | Holiday distance features...
+2026-07-29 22:50:29,628 | INFO | Dropping rows created by lag features...
+2026-07-29 22:50:29,638 | INFO | Saved app\data\processed\model_features.csv
+2026-07-29 22:53:20,941 | INFO | Loading model_ready.csv
+2026-07-29 22:53:20,955 | INFO | Creating calendar features...
+2026-07-29 22:53:20,971 | INFO | Creating trend index...
+2026-07-29 22:53:20,972 | INFO | Creating lag features...
+2026-07-29 22:53:20,977 | INFO | Creating rolling statistics...
+2026-07-29 22:53:20,981 | INFO | Creating weather flags...
+2026-07-29 22:53:20,987 | INFO | Creating season feature...
+2026-07-29 22:53:20,988 | INFO | Creating holiday distance features...
+2026-07-29 22:53:21,353 | INFO | Removing rows affected by lag features...
+2026-07-29 22:53:21,377 | INFO | Saved app\data\processed\model_features.csv
+2026-07-29 23:00:59,798 | INFO | Loading dataset...
+2026-07-29 23:01:04,832 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-29 23:01:04,839 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-29 23:01:06,532 | INFO | EDA completed successfully.
+2026-07-30 07:00:07,478 | INFO | Loading model_ready.csv
+2026-07-30 07:00:07,545 | INFO | Creating calendar features...
+2026-07-30 07:00:07,571 | INFO | Creating trend feature...
+2026-07-30 07:00:07,573 | INFO | Creating lag features...
+2026-07-30 07:00:07,582 | INFO | Creating rolling features...
+2026-07-30 07:00:07,594 | INFO | Creating weather features...
+2026-07-30 07:00:07,603 | INFO | Creating season feature...
+2026-07-30 07:00:07,606 | INFO | Creating holiday distance features...
+2026-07-30 07:00:08,188 | INFO | Removing rows created by lag features...
+2026-07-30 07:00:08,239 | INFO | Saved app\data\processed\model_features.csv
+2026-07-30 07:00:24,924 | INFO | Loading dataset...
+2026-07-30 07:00:29,039 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-30 07:00:29,048 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-30 07:00:31,689 | INFO | EDA completed successfully.
+2026-07-30 07:08:14,782 | INFO | Loading model_ready.csv
+2026-07-30 07:08:14,808 | INFO | Creating calendar features...
+2026-07-30 07:08:14,830 | INFO | Creating cyclical features...
+2026-07-30 07:08:14,841 | INFO | Creating trend feature...
+2026-07-30 07:08:14,843 | INFO | Creating lag features...
+2026-07-30 07:08:14,849 | INFO | Creating rolling statistics...
+2026-07-30 07:08:14,862 | INFO | Creating weather features...
+2026-07-30 07:08:14,868 | INFO | Creating season feature...
+2026-07-30 07:08:14,873 | INFO | Creating holiday features...
+2026-07-30 07:08:15,412 | INFO | Removing rows created by lag features...
+2026-07-30 07:08:15,445 | INFO | Saved app\data\processed\model_features.csv
+2026-07-30 07:08:57,968 | INFO | Loading dataset...
+2026-07-30 07:09:02,811 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-30 07:09:02,818 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-30 07:09:06,566 | INFO | EDA completed successfully.
