@@ -69,6 +69,14 @@ def aggregate_pizza_sales():
         how="left"
     )
 
+    # A day is only in `daily` (pre-merge) if the raw pizza_orders data had
+    # at least one order on it. Anything the calendar merge had to fill in
+    # is a GAP in the source data, not necessarily a real zero-sales day
+    # (e.g. shop closed for a holiday vs. the raw file simply missing rows).
+    # Flag it so downstream steps (and the model training team) can tell
+    # the difference, instead of silently treating $0 as a true label.
+    daily["data_missing"] = daily["total_sales"].isna()
+
     daily["total_sales"] = daily["total_sales"].fillna(0)
 
     daily["total_orders"] = daily["total_orders"].fillna(0)
@@ -96,8 +104,9 @@ def aggregate_pizza_sales():
     print("=" * 60)
     print(daily.head())
 
-    print("\nMissing sales days:")
-    print((daily["total_sales"] == 0).sum())
+    print("\nMissing sales days (calendar gap, filled with 0):")
+    print(int(daily["data_missing"].sum()))
+    print(daily.loc[daily["data_missing"], "date"].dt.strftime("%Y-%m-%d (%A)").tolist())
 
     print("\nDataset Shape:", daily.shape)
 

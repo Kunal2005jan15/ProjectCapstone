@@ -37,7 +37,17 @@ NON_FEATURE_COLUMNS = [
     "date",
     "holiday_name",
     "season",   # string ("Winter"/"Summer"/etc.) -- one-hot/encode before use
+    "data_missing",  # diagnostic flag from aggregate_sales.py: True = this
+                      # day had no rows in the raw source data and total_sales
+                      # was calendar-filled with 0, NOT a confirmed zero-sales
+                      # day. Excluded by default -- see note below.
 ]
+
+# `data_missing` is not excluded because it's leakage -- it's excluded
+# because it's diagnostic, not a genuine predictive signal. Model training
+# should look at rows where data_missing == True first and decide whether
+# to drop them, keep them, or investigate the raw source data, rather than
+# training on them as if they were confirmed zero-sales days.
 
 # Everything else in model_features.csv (calendar features, lag features,
 # rolling stats, weather flags, holiday-distance features) is safe to use
