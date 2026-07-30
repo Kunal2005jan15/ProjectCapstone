@@ -5,6 +5,7 @@ import pandas as pd
 import seaborn as sns
 
 from app.core.logger import logger
+from app.core.constants import LEAKAGE_COLUMNS, TARGET_COLUMN
 
 INPUT = Path("app/data/processed/model_features.csv")
 
@@ -169,11 +170,11 @@ def main():
     # Correlation
     # ----------------------------------------------------
 
-    leakage = [
-        "total_sales",
-        "total_orders",
-        "total_items",
-        "average_order_value",
+    # Drop target + leakage columns (total_orders, total_items,
+    # average_order_value -- see app/core/constants.py for why) plus
+    # non-numeric columns, so the heatmap only shows legitimate,
+    # forecast-safe features.
+    leakage = [TARGET_COLUMN] + LEAKAGE_COLUMNS + [
         "holiday_name",
         "date",
         "season"
@@ -203,12 +204,20 @@ def main():
             "season",
             "date"
         ])
-        .corr(numeric_only=True)["total_sales"]
+        .corr(numeric_only=True)[TARGET_COLUMN]
         .sort_values(ascending=False)
     )
 
     print("\nCorrelation with Target\n")
     print(target_corr)
+
+    print(
+        "\nNOTE: total_orders, total_items, and average_order_value are "
+        "shown above for reference, but they are TARGET LEAKAGE -- they are "
+        "known only after a day's sales happen. Do not use them as model "
+        "inputs. Use app.core.constants.get_model_feature_columns(df) when "
+        "building the training feature matrix."
+    )
 
     target_corr.to_csv(
         OUTPUT / "target_correlation.csv"
