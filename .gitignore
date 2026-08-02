@@ -1,0 +1,64 @@
+# =========================
+# Backend (Java / Spring Boot / Maven)
+# =========================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Frontend (React)
+# =========================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/npm-debug.log*
+frontend/yarn-error.log*
+
+# =========================
+# ml-service
+# (already has its own ml-service/.gitignore for data/models/venv —
+#  this section is just a backstop in case that file is ever removed)
+# =========================
+ml-service/.venv/
+ml-service/venv/
+ml-service/__pycache__/
+ml-service/**/__pycache__/
+
+# =========================
+# Environment / secrets — never commit real values
+# =========================
+.env
+.env.local
+.env.*.local
+**/application-local.properties
+**/application-secrets.properties
+
+# =========================
+# IDE / editor
+# =========================
+.vscode/
+.idea/
+*.iml
+*.swp
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
