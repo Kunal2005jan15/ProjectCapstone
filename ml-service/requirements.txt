@@ -1,47 +1,25 @@
-# ==========================
-# Core Data Science
-# ==========================
-numpy>=2.0.0
-pandas>=2.2.0
-scipy>=1.14.0
+# --- Core data handling ---
+pandas>=2.3.3            # 2.3.3 is the first pandas version with Python 3.14 wheels — don't pin lower
+numpy>=1.26.4
+openpyxl>=3.1.2          # needed to read the CoffeeShop.xlsx file
 
-# ==========================
-# Machine Learning
-# ==========================
-scikit-learn>=1.6.0
-joblib>=1.4.0
+# --- EDA / notebooks ---
+jupyter>=1.0.0
+matplotlib>=3.8.4
+seaborn>=0.13.2
 
-# ==========================
-# Time Series Forecasting
-# ==========================
-prophet>=1.1.6
+# --- Modeling ---
+prophet>=1.1.5
+scikit-learn>=1.4.2
+joblib>=1.4.2
 
-# ==========================
-# API
-# ==========================
-fastapi>=0.116.0
-uvicorn[standard]>=0.35.0
+# --- Serving (step 12: send prediction to frontend) ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.1
 
-# ==========================
-# Validation
-# ==========================
-pydantic>=2.11.0
+# --- Dev ---
+python-dotenv>=1.0.1
 
-# ==========================
-# Visualization
-# ==========================
-matplotlib>=3.10.0
-
-# ==========================
-# Excel Support
-# ==========================
-openpyxl>=3.1.5
-
-# ==========================
-# Environment Variables
-# ==========================
-python-dotenv>=1.1.0
-
-ydata-profiling>=4.16.1
-requests
-seaborn
+holidays>=0.47
+requests>=2.31.0 
