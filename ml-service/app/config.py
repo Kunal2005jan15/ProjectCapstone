@@ -78,3 +78,13 @@ def model_path_for(source: str, item_name: str) -> Path:
 
 for _dir in (RAW_DIR, EXTERNAL_DIR, PROCESSED_DIR, MODELS_DIR, REPORTS_DIR):
     _dir.mkdir(parents=True, exist_ok=True)
+
+
+
+    # ---- Backend integration (push architecture) --------------------------------
+BACKEND_BASE_URL = "http://localhost:8080"  # override via env var in real deployment
+BACKEND_FORECAST_PATH = "/api/v1/shops/{shop_id}/forecasts"
+
+ITEM_MAPPING_PATH = APP_DIR / "integration" / "item_mapping.json"
+
+BACKEND_AUTH_TOKEN_ENV_VAR = "ML_PUSH_AUTH_TOKEN"
