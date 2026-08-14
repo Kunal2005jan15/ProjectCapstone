@@ -1,0 +1,25 @@
+# --- Core data handling ---
+pandas>=2.3.3            # 2.3.3 is the first pandas version with Python 3.14 wheels — don't pin lower
+numpy>=1.26.4
+openpyxl>=3.1.2          # needed to read the CoffeeShop.xlsx file
+
+# --- EDA / notebooks ---
+jupyter>=1.0.0
+matplotlib>=3.8.4
+seaborn>=0.13.2
+
+# --- Modeling ---
+prophet>=1.1.5
+scikit-learn>=1.4.2
+joblib>=1.4.2
+
+# --- Serving (step 12: send prediction to frontend) ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.1
+
+# --- Dev ---
+python-dotenv>=1.0.1
+
+holidays>=0.47
+requests>=2.31.0 

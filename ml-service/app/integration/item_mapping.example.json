@@ -1,0 +1,9 @@
+[
+  {
+    "_comment": "TEMPLATE — copy this file to item_mapping.json and replace with real values once a shop exists in the backend. Each entry maps one of our demo (source, item_name) pairs to the backend's real shop_id and item_id UUIDs.",
+    "source": "bakery",
+    "item_name": "Coffee",
+    "shop_id": "00000000-0000-0000-0000-000000000000",
+    "item_id": "00000000-0000-0000-0000-000000000000"
+  }
+]
