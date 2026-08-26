@@ -1,1 +1,5 @@
-
+item,forecasted_demand_7d,current_stock,safety_buffer,reorder_qty,status
+Milk (litres),377.4,420,37.7,0.0,OK — sufficient stock
+Bread (units),641.1,180,64.1,525.3,URGENT — risk of stockout
+Rice (kg),446.7,900,44.7,0.0,OK — sufficient stock
+Flour (kg),392.3,340,39.2,91.5,Reorder recommended
