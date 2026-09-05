@@ -1,0 +1,318 @@
+DINE-SHOP-AI — SETUP & GITHUB PUSH GUIDE
+==========================================
+Covers: local setup for all 3 services, the env vars each one needs,
+running them together, and exactly what to do to push this to GitHub.
+
+
+PART 1 — PROJECT LAYOUT
+========================
+
+Dine-Shop-AI/
+├── frontend/                  React + Vite      (port 5173, dev)
+├── food-platform-backend/     Spring Boot 3     (port 8080)
+└── ml-service/                FastAPI + Prophet (port 8000)
+
+The frontend talks to the backend over REST (JWT auth). The backend owns
+the Postgres database. ml-service reads real order history straight out
+of that same database and pushes forecasts back into it. Start them in
+this order: Postgres → backend → frontend / ml-service (either order).
+
+
+PART 2 — PREREQUISITES
+========================
+
+Install these before you start:
+
+  - Node.js 18+ and npm         (frontend)
+  - Java 17 and Maven           (backend)
+  - Python 3.11 and pip         (ml-service)
+  - PostgreSQL 16, OR Docker    (database — either works, see below)
+  - Git
+
+Check versions:
+  node -v
+  java -version
+  mvn -version
+  python3 --version
+  git --version
+
+
+PART 3 — DATABASE SETUP
+========================
+
+You have two options — pick one.
+
+OPTION A: Local Postgres via Docker (recommended for local dev)
+------------------------------------------------------------------
+  cd food-platform-backend
+  docker compose up -d
+
+This starts Postgres 16 on localhost:5432 with the credentials already
+set in docker-compose.yml (matches .env.example defaults). Nothing else
+to configure for local dev.
+
+OPTION B: Your real Render Postgres instance
+------------------------------------------------------------------
+Use this if you want the backend/ml-service talking to your actual
+production data (not just local testing).
+
+  1. Render Dashboard -> your Postgres instance -> Connections
+  2. Copy the "External Database URL" (if connecting from outside
+     Render) or "Internal Database URL" (if the backend/ml-service are
+     also deployed on Render, same region — faster, no SSL needed)
+  3. You'll paste this into DATABASE_URL (ml-service) and the
+     DB_HOST/DB_PORT/DB_NAME/DB_USERNAME/DB_PASSWORD fields (backend) —
+     see Part 4 below.
+
+Either way, Flyway (in the backend) creates the schema automatically on
+first run — you don't need to run any SQL by hand.
+
+
+PART 4 — BACKEND SETUP (food-platform-backend)
+==================================================
+
+  cd food-platform-backend
+  cp .env.example .env
+
+Open .env and fill in:
+
+  DB_HOST, DB_PORT, DB_NAME, DB_USERNAME, DB_PASSWORD
+      -> Docker Compose defaults if using Option A above, or your Render
+         Postgres credentials if using Option B.
+
+  JWT_SECRET
+      -> Generate one: openssl rand -base64 48
+         Never reuse the placeholder value in production.
+
+  CORS_ALLOWED_ORIGINS
+      -> http://localhost:3000,http://localhost:5173 for local dev
+         (already the default).
+
+  ML_SERVICE_URL
+      -> http://localhost:8000 for local dev.
+
+  ML_PUSH_API_KEY
+      -> A random shared secret so ml-service can push forecasts in.
+         Generate one: python3 -c "import secrets; print(secrets.token_urlsafe(32))"
+         Leave blank if you're not running ml-service yet — that
+         forecasts endpoint just stays OWNER/ADMIN-only until you set
+         this, nothing else is affected.
+
+  PAYMENT_PROVIDER, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET
+      -> Leave PAYMENT_PROVIDER=off unless you have real Razorpay keys.
+
+Export the .env into your shell (Spring Boot needs these as real env
+vars, not just a file — use direnv, an IDE run config, or simply):
+
+  export $(grep -v '^#' .env | xargs)
+
+Run the backend:
+
+  mvn spring-boot:run
+
+Verify it's up:
+
+  curl http://localhost:8080/actuator/health
+  -> should return {"status":"UP"}
+
+  Swagger UI: http://localhost:8080/swagger-ui.html
+
+
+PART 5 — FRONTEND SETUP (frontend)
+=====================================
+
+  cd frontend
+  npm install
+
+Create a .env file (there's no .env.example here yet — this is the one
+variable it reads):
+
+  echo "VITE_BACKEND_URL=http://localhost:8080/api/v1" > .env
+
+(This is already the default if you skip this step for local dev — only
+needed if your backend runs somewhere other than localhost:8080.)
+
+Run it:
+
+  npm run dev
+
+Open http://localhost:5173
+
+Other useful commands:
+
+  npm run build      # production build -> frontend/dist/
+  npm run lint        # ESLint — should report 0 errors, 0 warnings
+
+
+PART 6 — ML-SERVICE SETUP (ml-service)
+=========================================
+
+  cd ml-service
+  python3 -m venv venv
+  source venv/bin/activate        # Windows: venv\Scripts\activate
+  pip install -r requirements.txt
+  cp .env.example .env
+
+Open .env and fill in:
+
+  DATABASE_URL
+      -> Your Render Postgres connection string (see Part 3, Option B),
+         OR for local Docker Postgres:
+         postgresql://food_platform_user:change_me@localhost:5432/food_platform
+         (matching docker-compose.yml / your backend .env)
+
+  BACKEND_BASE_URL
+      -> http://localhost:8080 for local dev, or your deployed backend
+         URL in production.
+
+  ML_PUSH_AUTH_TOKEN
+      -> MUST be the exact same value as ML_PUSH_API_KEY you set in the
+         backend's .env in Part 4. This is how ml-service authenticates
+         its forecast pushes.
+
+Run the demo pipeline (optional — uses Kaggle pizza/bakery sample data,
+not your real data, just to confirm everything imports/runs):
+
+  uvicorn app.inference.serve_api:app --reload
+
+Verify:
+
+  curl http://localhost:8000/health
+  -> {"status":"ok"}
+
+  curl http://localhost:8000/health/db
+  -> {"status":"ok"}   (confirms DATABASE_URL actually connects)
+
+Train models on your REAL shop data (once real orders exist in the DB):
+
+  python3 -m app.modeling.train_live_models
+
+Push forecasts into the backend (dry run first — prints what it WOULD
+send without actually sending anything):
+
+  python3 -c "from app.integration.push_live_forecasts import push_all_shops; push_all_shops(dry_run=True)"
+
+Once the dry-run output looks right, run for real:
+
+  python3 -c "from app.integration.push_live_forecasts import push_all_shops; push_all_shops(dry_run=False)"
+
+In production, run this on a schedule (nightly cron / Render Cron Job) —
+not manually every time. See ml-service/documents/Live_Integration_Guide.md
+for the full data-flow explanation.
+
+
+PART 7 — RUNNING ALL THREE TOGETHER (local dev)
+===================================================
+
+Three separate terminals:
+
+  Terminal 1:  cd food-platform-backend && mvn spring-boot:run
+  Terminal 2:  cd frontend && npm run dev
+  Terminal 3:  cd ml-service && source venv/bin/activate && uvicorn app.inference.serve_api:app --reload
+
+Then open http://localhost:5173 for the app itself.
+
+
+PART 8 — PUSHING TO GITHUB
+=============================
+
+This project has NOT been initialized as a git repo yet in what you
+downloaded. Here's exactly what to do.
+
+STEP 1 — One cleanup before you commit anything
+--------------------------------------------------
+There's a stray frontend.zip sitting at the repo root (a duplicate of
+the frontend/ folder, left over from an earlier upload/zip step). It's
+5+ MB of dead weight in your git history if you commit it. Either
+delete it:
+
+  rm frontend.zip
+
+...or if you want to keep it around locally without it going into git,
+add a line to the root .gitignore instead:
+
+  echo "frontend.zip" >> .gitignore
+
+STEP 2 — Confirm no secrets are about to be committed
+---------------------------------------------------------
+The root .gitignore already covers this (.env, .env.* are ignored
+everywhere in the tree, only .env.example files are tracked) — but
+double check before your first commit:
+
+  find . -name ".env" -not -path "*/node_modules/*"
+
+This should print NOTHING. If it prints a path, that .env file would
+get committed — either it's not actually gitignored right, or you're
+running this from somewhere unexpected. Do not proceed until this is
+empty.
+
+STEP 3 — Initialize git and make the first commit
+------------------------------------------------------
+  cd Dine-Shop-AI          (the folder containing frontend/, food-platform-backend/, ml-service/)
+  git init
+  git add .
+  git status               # scan this output — confirm no .env files, no node_modules/,
+                            # no dist/, no target/, no __pycache__/, no *.joblib files
+                            # are listed. If any of those appear, STOP and fix .gitignore
+                            # before committing — don't commit and clean up after.
+  git commit -m "Initial commit: frontend + backend + ml-service monorepo"
+
+STEP 4 — Create the GitHub repo and push
+----------------------------------------------
+Create an empty repo on GitHub first (no README/gitignore/license —
+you already have all of those), then:
+
+  git branch -M main
+  git remote add origin https://github.com/<your-username>/<repo-name>.git
+  git push -u origin main
+
+If you use SSH instead of HTTPS for GitHub auth:
+
+  git remote add origin git@github.com:<your-username>/<repo-name>.git
+  git push -u origin main
+
+STEP 5 — Verify on GitHub
+------------------------------
+Open the repo on github.com and check:
+  - frontend/, food-platform-backend/, ml-service/ are all there
+  - NO .env files are visible anywhere (search the repo for "DB_PASSWORD"
+    or "JWT_SECRET" using GitHub's search bar — should return 0 results
+    in real file contents, only in .env.example placeholders)
+  - node_modules/, dist/, target/, __pycache__/, and *.joblib model
+    files are NOT in the repo (they shouldn't be, given .gitignore, but
+    worth a glance)
+
+
+PART 9 — IF YOU LATER PUSH WITH A SECRET BY ACCIDENT
+========================================================
+If you ever discover a real secret got committed (not just staged —
+actually pushed to GitHub):
+  1. Immediately rotate that secret (new JWT_SECRET, new DB password,
+     new ML_PUSH_API_KEY, new Razorpay keys — whatever leaked). Assume
+     it's compromised the moment it's on GitHub, even in a private repo.
+  2. Removing it from a later commit is NOT enough — it's still in git
+     history. You'd need `git filter-repo` or GitHub's secret-scanning
+     removal support to actually purge it, and even then treat the old
+     value as burned.
+  3. This is why Step 2 above matters — much easier to prevent than to
+     clean up after.
+
+
+QUICK REFERENCE — ALL ENV VARS IN ONE PLACE
+================================================
+
+food-platform-backend/.env:
+  DB_HOST, DB_PORT, DB_NAME, DB_USERNAME, DB_PASSWORD
+  JWT_SECRET
+  CORS_ALLOWED_ORIGINS
+  ML_SERVICE_URL
+  ML_PUSH_API_KEY          <- must match ml-service's ML_PUSH_AUTH_TOKEN
+  PAYMENT_PROVIDER, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET
+
+frontend/.env:
+  VITE_BACKEND_URL
+
+ml-service/.env:
+  DATABASE_URL
+  BACKEND_BASE_URL
+  ML_PUSH_AUTH_TOKEN       <- must match backend's ML_PUSH_API_KEY

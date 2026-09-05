@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Kraft ticket paper */
+    --background: 36 32% 91%;
+    --foreground: 26 32% 13%;
+
+    --card: 38 42% 96%;
+    --card-foreground: 26 32% 13%;
+
+    --popover: 38 42% 97%;
+    --popover-foreground: 26 32% 13%;
+
+    /* Mango — primary CTA */
+    --primary: 24 100% 54%;
+    --primary-foreground: 30 60% 99%;
+
+    /* Deep sage — secondary actions / served state */
+    --secondary: 100 16% 27%;
+    --secondary-foreground: 40 40% 96%;
+
+    --muted: 36 18% 86%;
+    --muted-foreground: 28 14% 40%;
+
+    /* Stamp red — sparing use: badges, live indicators */
+    --accent: 9 62% 44%;
+    --accent-foreground: 40 40% 97%;
+
+    --destructive: 3 68% 42%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 18% 78%;
+    --input: 30 18% 80%;
+    --ring: 24 100% 54%;
+    --radius: 0.4rem;
+
+    --ink: 26 32% 13%;
+  }
+
+  .dark {
+    --background: 26 24% 10%;
+    --foreground: 36 30% 92%;
+    --card: 26 22% 13%;
+    --card-foreground: 36 30% 92%;
+    --popover: 26 22% 13%;
+    --popover-foreground: 36 30% 92%;
+    --primary: 24 100% 58%;
+    --primary-foreground: 26 30% 10%;
+    --secondary: 100 14% 60%;
+    --secondary-foreground: 26 24% 10%;
+    --muted: 26 18% 18%;
+    --muted-foreground: 36 12% 65%;
+    --accent: 9 62% 55%;
+    --accent-foreground: 26 24% 10%;
+    --destructive: 3 68% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 26 16% 22%;
+    --input: 26 16% 22%;
+    --ring: 24 100% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image:
+      radial-gradient(hsl(var(--ink) / 0.05) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .font-mono-ticket {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Punched-hole perforation edge, illusion of torn ticket paper */
+  .ticket-notch-top::before,
+  .ticket-notch-bottom::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    height: 16px;
+    background-image: radial-gradient(circle, hsl(var(--background)) 6px, transparent 6.5px);
+    background-size: 24px 16px;
+    background-repeat: repeat-x;
+    pointer-events: none;
+  }
+  .ticket-notch-top::before {
+    top: -8px;
+    background-position: top center;
+  }
+  .ticket-notch-bottom::after {
+    bottom: -8px;
+    background-position: bottom center;
+  }
+
+  .dashed-divider {
+    background-image: repeating-linear-gradient(
+      to right,
+      hsl(var(--ink) / 0.35) 0,
+      hsl(var(--ink) / 0.35) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+    height: 1px;
+  }
+
+  .paper-grain {
+    background-image: radial-gradient(hsl(var(--ink) / 0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+}

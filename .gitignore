@@ -1,0 +1,49 @@
+.venv/
+venv/
+
+# Raw / external / processed data
+app/data/raw/**
+!app/data/raw/**/.gitkeep
+
+app/data/external/**
+!app/data/external/**/.gitkeep
+
+app/data/processed/**
+!app/data/processed/**/.gitkeep
+
+# Static pretrained models
+# Keep models_store in Git for Phase 1
+# Do NOT ignore models_store/
+
+# Sample/test models
+# Do not commit sample model files
+ml-service/models_store_samples/
+
+# Live-trained models
+models_store_live/**
+!models_store_live/.gitkeep
+!models_store_live/README.md
+
+# Maven build output
+**/target/
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Integration/local mapping
+app/integration/item_mapping.json
+node_modules/
+**/node_modules/
