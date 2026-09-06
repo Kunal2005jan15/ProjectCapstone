@@ -58,11 +58,13 @@ public class InventoryService {
         return InventoryResponse.from(inventoryRepository.save(inventory));
     }
 
+    @Transactional(readOnly = true)
     public List<InventoryResponse> getInventory(UUID shopId) {
         return inventoryRepository.findByShop_ShopId(shopId).stream().map(InventoryResponse::from).toList();
     }
 
     /** Rule-based low-stock alert list: current_stock <= reorder_level. */
+    @Transactional(readOnly = true)
     public List<InventoryResponse> getLowStockAlerts(UUID shopId) {
         return inventoryRepository.findByShop_ShopId(shopId).stream()
                 .filter(inv -> inv.getCurrentStock().compareTo(inv.getReorderLevel()) <= 0)
