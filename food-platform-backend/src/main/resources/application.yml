@@ -6,7 +6,7 @@ spring:
     name: food-platform-backend
 
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:food_platform}
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:food_platform}?sslmode=${DB_SSLMODE:disable}
     username: ${DB_USERNAME:food_platform_user}
     password: ${DB_PASSWORD:change_me}
     driver-class-name: org.postgresql.Driver
